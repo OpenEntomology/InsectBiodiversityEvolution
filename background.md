@@ -22,7 +22,7 @@ Upon completion of this course students should be able to:
 Course organization
 -------------------
 
-For collaborative development purposes the course has been divided into several modules or units:
+For collaborative development purposes the course has been divided into several modules or *units*:
 * Introduction – mostly logistics but also addresses the following questions: What are arthropods? What is systematics and why is it relevant?
 * Arthropod morphology – lays the groundwork for understanding adaptations, evolution, and diagnosis
 * Systematics and evolution – basics of evolution (natural selection, adaptation, Hox genes), history of classification and phylogenetics (Aristotle to Hennig and beyond); puts our knowledge into context
@@ -39,7 +39,7 @@ For collaborative development purposes the course has been divided into several 
 * Amphiesmenoptera
 * Natural history collections (could/should be done as one of the first modules)
 
-Dispersed across these units, as appropriate, we intend to address phenomena relevant to insect diversity and evolution. Some of these phenomena warrant deep discussions, while others are shorter vignettes.
+Dispersed across these units, as appropriate, we intend to address *phenomena* relevant to insect diversity and evolution. Some of these phenomena warrant deep discussions, while others are shorter vignettes.
 
 Deep discussions:
 * origin of wings
