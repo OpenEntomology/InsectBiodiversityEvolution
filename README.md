@@ -8,3 +8,5 @@ Files meant for developers/instructors are written with **Markdown** https://dar
 Files intended for students are written **LaTeX**, for a more professional presentation https://www.latex-project.org/
 
 Except that slideshows are currently edited using **Google Slides** https://www.google.com/slides/about/
+
+Check the course wiki for more info - https://github.com/adeans/InsectBiodiversityEvolution/wiki
