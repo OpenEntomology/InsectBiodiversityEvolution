@@ -9,4 +9,5 @@ Files intended for students are written **LaTeX**, for a more professional prese
 
 Except that slideshows are currently edited using **Google Slides** https://www.google.com/slides/about/
 
-Check the course wiki for more info - https://github.com/adeans/InsectBiodiversityEvolution/wiki
+Check the course wiki for more info - https://github.com/adeans/InsectBiodiversityEvolution/wiki 
+and see github cheat sheet: https://training.github.com/kit/downloads/github-git-cheat-sheet.pdf
