@@ -5,9 +5,9 @@ Our intention is to develop these materials collaboratively and distribute them 
 
 Files meant for developers/instructors are written with **Markdown** https://daringfireball.net/projects/markdown/syntax#em
 
-Files intended for students are written **LaTeX**, for a more professional presentation https://www.latex-project.org/
+Files intended for students are written **LaTeX** https://www.latex-project.org/
 
-Except that slideshows are currently edited using **Google Slides** https://www.google.com/slides/about/
+Except that slideshows are currently edited using **Google Slides** -- https://www.google.com/slides/about/ -- although they might be moved to LaTeX
 
 Check the course wiki for more info - https://github.com/adeans/InsectBiodiversityEvolution/wiki 
 and see github cheat sheet: https://training.github.com/kit/downloads/github-git-cheat-sheet.pdf
