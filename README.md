@@ -9,5 +9,5 @@ Files intended for students are written **LaTeX** https://www.latex-project.org/
 
 Except that slideshows are currently edited using **Google Slides** -- https://www.google.com/slides/about/ -- although they might be moved to LaTeX
 
-Check the course wiki for more info - https://github.com/adeans/InsectBiodiversityEvolution/wiki 
+Check the course wiki for more info - https://github.com/adeans/InsectBiodiversityEvolution/wiki -
 and see github cheat sheet: https://training.github.com/kit/downloads/github-git-cheat-sheet.pdf
