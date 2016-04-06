@@ -3,7 +3,7 @@
 \usepackage{fullpage} % changes the margin
 \usepackage{fancyhdr} % for footer
 \usepackage[UKenglish]{isodate}% http://ctan.org/pkg/isodate for date format
-\usepackage{fixltx2e}%subscript
+%\usepackage{fixltx2e}%subscript
 \usepackage{float}%force tables/figs into certain placement
 \usepackage{changepage}%for dichotomous key
 \usepackage{graphicx}%for figures
@@ -13,10 +13,12 @@
 \usepackage[letterpaper,margin=1in]{geometry}
 \usepackage{placeins}%prevent images from floating into inappropriate sections
 \usepackage{multicol}				% 2-column layout
+\usepackage{natbib}	%for bibliography
 
 \def\labelitemi{--}
 
 \pagestyle{fancy}
+\newcommand*{\doi}[1]{\href{http://dx.doi.org/#1}{doi: #1}}%links doi
 \renewcommand{\headrulewidth}{0pt}
 %
 \lhead{}
@@ -81,14 +83,9 @@ Working with a partner, organize your space, specimens, tools, and microscope. U
 There is one family of commonly encountered moths that each have a single opening at the apex of its abdomen, for copulation and oviposition.
 
 \subsubsection{Nepticulidae (serpentine leafminer moths)}
-\begin{itemize}
-\item minute in size (wingspan 3.5--10 mm); among the very smallest of moths
-\item usually black and white, with a metallic band or gold speckles 
-\item antennae with an eye cap
-\item maxillary palps well developed, long and folded
-\item fore wing with branched veins
-\end{itemize}
-Larvae make thin, winding mines on the leaves of trees and shrubs. There are roughly 800 described species.
+\noindent{}\textit{Diagnostic characters:} Wingspan 3.5--10 mm, among the very smallest of moths; usually black and white, with a metallic band or gold speckles; antennae with an eye cap; maxillary palps well developed, long and folded; fore wing with branched veins.\\
+
+\noindent{}\textit{Natural history:} Larvae make thin, winding mines on the leaves of trees and shrubs. There are roughly 800 described species.
 
 \begin{figure}[ht!]
     \centering
@@ -108,17 +105,12 @@ Larvae make thin, winding mines on the leaves of trees and shrubs. There are rou
 \end{figure}
 
 \subsection{Dytrisia}
-The remaining lepidopterans, \textgreater98\% of all species, are classified in an unranked (some classifications rank this a a division), monophyletic taxon called Ditrysia. These insects have separate openings for copulation and oviposition.
+The remaining lepidopterans, \textgreater98\% of all species, are classified in an unranked (sometimes a ``division''), monophyletic taxon called Ditrysia. These insects have separate openings for copulation and oviposition.
 
 \subsubsection{Gracillariidae (blotch leafminer moths)}
-\begin{itemize}
-\item minute to small in size (wingspan 5--20 mm)
-\item often brightly colored or metallic
-\item maxillary palps usually absent
-\item proboscis bare 
-\item wing venation reduced and elongate proximally, wing fringe long
-\item hind wing lanceolate
-\end{itemize}
+\noindent{}\textit{Diagnostic characters:} Minute to small in size (wingspan 5--20 mm); often brightly colored or metallic; maxillary palps usually absent;  proboscis bare; wing venation reduced and elongate proximally, wing fringe long; hind wing lanceolate.\\
+
+\noindent{}\textit{Natural history:} 
 
 \begin{figure}[ht!]
     \centering
@@ -138,13 +130,9 @@ The remaining lepidopterans, \textgreater98\% of all species, are classified in 
 \end{figure}
 
 \subsubsection{Gelechiidae (twirler moths, leaf tiers)}
-\begin{itemize}
-\item very small to small (wingspan 7--25 mm)
-\item maxillary palps short, 4-segmented, located close to base of proboscis
-\item labial palps long, upcurved, 3rd segment elongate and tapering
-\item proboscis scaly
-\item hind wing drawn out to a point anteriorly at apex, so that tip of wing is concave
-\end{itemize}
+\noindent{}\textit{Diagnostic characters:} Small (wingspan 7--25 mm); maxillary palps short, 4-segmented, located close to base of proboscis; labial palps long, upcurved, 3rd segment elongate and tapering; proboscis scaly; hind wing drawn out to a point anteriorly at apex, so that tip of wing is concave.\\
+
+\noindent{}\textit{Natural history:} 
 
 \begin{figure}[ht!]
     \centering
@@ -164,14 +152,9 @@ The remaining lepidopterans, \textgreater98\% of all species, are classified in 
 \end{figure}
 
 \subsubsection{Tineidae (clothes moths and relatives)}
-\begin{itemize}
-\item small to medium-sized (wingspan 7--36 mm), usually gray or brown
-\item head vestiture entirely comprised of erect scales (bushy)
-\item antennae with a whorl of erect scales on each segment
-\item maxillary palps usually present, folded
-\item labial palps with sparse, elongate spines, usually very obvious
-\item wing venation not so reduced as in above families
-\end{itemize}
+\noindent{}\textit{Diagnostic characters:} Small to medium-sized (wingspan 7--36 mm), usually gray or brown; head vestiture entirely comprised of erect scales (bushy); antennae with a whorl of erect scales on each segment; maxillary palps usually present, folded; labial palps with sparse, elongate spines, usually very obvious; wing venation not so reduced as in above families.\\
+
+\noindent{}\textit{Natural history:} 
 
 \begin{figure}[ht!]
     \centering
@@ -190,17 +173,13 @@ The remaining lepidopterans, \textgreater98\% of all species, are classified in 
     \caption{Tineidae}\label{fig:tineids}
 \end{figure}
 
-Note that the remaining families have more obvious morphological differences between the fore wing and hind wing, mainly that the hind wing is wider.
+\noindent{}Note that the remaining families usually have more obvious morphological differences between the fore wing and hind wing, mainly that the hind wing is wider when measured along the anterior-posterior axis.
 
 \subsubsection{Attevidae}
-\begin{itemize}
-\item small to medium-sized (wingspan 8--31 mm), slightly narrow-winged moths
-\item often brightly colored 
-\item wing tips relatively blunt
-\item head and labial palps with smooth scales
-\item ocelli absent
-\item maxillary palps have 1--2 segments
-\end{itemize}
+\noindent{}\textit{Diagnostic characters:} Small to medium-sized (wingspan 8--31 mm), slightly narrow-winged moths; often brightly colored; wing tips relatively blunt; head and labial palps with smooth scales; ocelli absent; maxillary palps have 1--2 segments
+
+\noindent{}\textit{Natural history:} 
+
 % Might be good to add Pterophoridae too - easy to ID and fairly common. - Chris Grinter
 
 \begin{figure}[ht!]
@@ -208,32 +187,27 @@ Note that the remaining families have more obvious morphological differences bet
     \begin{subfigure}[ht!]{0.36\textwidth}
         \includegraphics[width=\textwidth]{image40}
         \caption{Wings}
-        \label{fig:ypono1}
+        \label{fig:attev1}
     \end{subfigure}
     \qquad %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
       %(or a blank line to force the subfigure onto a new line)
     \begin{subfigure}[ht!]{0.45\textwidth}
         \includegraphics[width=\textwidth]{ypono}
-        \caption{Habitus. Photo (CC BY 3.0) by J. J. Wilson \textit{et al}. \url{http://dx.doi.org/10.3897/zookeys.46.406}}
-        \label{fig:ypono2}
+        \caption{Habitus. \citep[Photo CC BY 3.0 by ][]{wilsonetal2010}}
+        \label{fig:attev2}
     \end{subfigure}
-    \caption{Yponomeutidae}\label{fig:yponomeutids}
+    \caption{Attevidae}\label{fig:attevids}
 \end{figure}
 
 \subsubsection{Psychidae (bagworm moths)}
-\begin{itemize}
-\item small to medium-sized moths (wingspan 12--36 mm)
-\item body usual black in North American species
-\item wings often absent or reduced in females, which remain in the silken bag (Figure \ref{fig:psychid2})
-\item male wings often (but not always!) mostly clear
-\item setae hair-like, rather than scale-like
-\end{itemize}
-Larvae form bags constructed of silk and plant material.
+\noindent{}\textit{Diagnostic characters:} Small to medium-sized moths (wingspan 12--36 mm); body usual black in North American species; wings often absent or reduced in females, which remain in the silken bag (Figure \ref{fig:psychid2}); male wings often (but not always!) mostly clear; setae hair-like, rather than scale-like.\\
+
+\noindent{}\textit{Natural history:} Larvae form bags constructed of silk and plant material.
 
 \begin{figure}[ht!]
     \centering
     \begin{subfigure}[ht!]{0.36\textwidth}
-        \includegraphics[width=\textwidth]{image39}
+        \includegraphics[width=\textwidth]{PsychidWings}%fig 46 from Comstock 1918
         \caption{Wings}
         \label{fig:psychid1}
     \end{subfigure}
@@ -255,12 +229,9 @@ Larvae form bags constructed of silk and plant material.
 \end{figure}
 
 \subsubsection{Sesiidae (clearwing moths)}
-\begin{itemize}
-\item small to medium-sized (wingspan 15--50 mm)
-\item transparent, scaleless ``windows'' usually present on wings
-\item often wasp-like in shape and color
-\item antennae widen apically, but narrow at the apex and are often somewhat hooked
-\end{itemize}
+\noindent{}\textit{Diagnostic characters:} Small to medium-sized (wingspan 15--50 mm); transparent, scaleless ``windows'' usually present on wings; often wasp-like in shape and color; antennae widen apically, but narrow at the apex and are often somewhat hooked.\\
+
+\noindent{}\textit{Natural history:} 
 
 \begin{figure}[ht!]
     \centering
@@ -280,18 +251,15 @@ Larvae form bags constructed of silk and plant material.
 \end{figure}
 
 \subsubsection{Cossidae (carpenterworm moths)}
-\begin{itemize}
-\item relatively large (wingspan 30--100 mm), heavy-bodied
-\item male antennae bipectinate, females filliform
-\item species in the U.S. usually black and gray, dull or with some orange
-\item head is relatively small compared to the rest of the body (as opposed to Sphingidae)
-\end{itemize}
+\noindent{}\textit{Diagnostic characters:} Relatively large (wingspan 30--100 mm), heavy-bodied; male antennae bipectinate, females filliform; species in the U.S. usually black and gray, dull or with some orange; head is relatively small compared to the rest of the body (as opposed to Sphingidae).\\
+
+\noindent{}\textit{Natural history:} 
 
 \begin{figure}[ht!]
     \centering
     \begin{subfigure}[ht!]{0.38\textwidth}
         \includegraphics[width=\textwidth]{CossidWings}
-        \caption{Wings. Fig. 343 from Comstock (1918); DOI: 10.5962/bhl.title.54605}
+        \caption{Wings \citep[Fig. 343]{comstock1918wings}}
         \label{fig:cossid1}
     \end{subfigure}
     \qquad %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
@@ -315,9 +283,9 @@ Larvae form bags constructed of silk and plant material.
 
 \begin{figure}[ht!]
     \centering
-    \begin{subfigure}[ht!]{0.38\textwidth}
-        \includegraphics[width=\textwidth]{image46}
-        \caption{Wings}
+    \begin{subfigure}[ht!]{0.35\textwidth}
+        \includegraphics[width=\textwidth]{TortricidWings}
+        \caption{Wings \citep[Fig. 353]{comstock1918wings}}
         \label{fig:tortricid1}
     \end{subfigure}
     \qquad %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
@@ -341,9 +309,9 @@ Larvae form bags constructed of silk and plant material.
 
 \begin{figure}[ht!]
     \centering
-    \begin{subfigure}[ht!]{0.38\textwidth}
-        \includegraphics[width=\textwidth]{LimacodidWings}%fig 349 in Comstock
-        \caption{Wings}
+    \begin{subfigure}[ht!]{0.35\textwidth}
+        \includegraphics[width=\textwidth]{LimacodidWings}
+        \caption{Wings \citep[Fig. 349]{comstock1918wings}}
         \label{fig:limacodid1}
     \end{subfigure}
     \qquad %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
@@ -457,8 +425,8 @@ Larvae form bags constructed of silk and plant material.
 \begin{figure}[ht!]
     \centering
     \begin{subfigure}[ht!]{0.28\textwidth}
-        \includegraphics[width=\textwidth]{image26}
-        \caption{Wings}
+        \includegraphics[width=\textwidth]{PapilionidWings}
+        \caption{Wings \citep[Fig. 350]{comstock1918wings}}
         \label{fig:papilionid1}
     \end{subfigure}
     \qquad %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
@@ -508,8 +476,8 @@ Larvae form bags constructed of silk and plant material.
 \begin{figure}[ht!]
     \centering
     \begin{subfigure}[ht!]{0.25\textwidth}
-        \includegraphics[width=\textwidth]{image10}
-        \caption{Wings}
+        \includegraphics[width=\textwidth]{PieridWings}
+        \caption{Wings \citep[Fig. 342]{comstock1918wings}}
         \label{fig:pierid1}
     \end{subfigure}
     \qquad %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
@@ -588,19 +556,19 @@ Larvae form bags constructed of silk and plant material.
 
 \begin{figure}[ht!]
     \centering
-    \begin{subfigure}[ht!]{0.4\textwidth}
-        \includegraphics[width=\textwidth]{image18}
-        \caption{Wings}
+    \begin{subfigure}[ht!]{0.31\textwidth}
+        \includegraphics[width=\textwidth]{SaturniidWings}%fig 345 from comstock 1918
+        \caption{Wings \citep[Fig. 345]{comstock1918wings}}
         \label{fig:saturniid1}
     \end{subfigure}
     ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
       %(or a blank line to force the subfigure onto a new line)
-    \begin{subfigure}[ht!]{0.44\textwidth}
+    \begin{subfigure}[ht!]{0.48\textwidth}
         \includegraphics[width=\textwidth]{image00}
         \caption{Habitus}
         \label{fig:saturniid2}
     \end{subfigure}
-    \caption{Sphingidae}\label{fig:saturniids}
+    \caption{Saturniidae}\label{fig:saturniids}
 \end{figure}
 
 \subsubsection{Lasiocampidae (tent caterpillars, lappet moths, eggars)}
@@ -612,7 +580,7 @@ Larvae form bags constructed of silk and plant material.
     \centering
     \begin{subfigure}[ht!]{0.3\textwidth}
         \includegraphics[width=\textwidth]{LasiocampidWings}
-        \caption{Wings. Figure 69 in Comstock (1918); DOI: 10.5962/bhl.title.54605}
+        \caption{Wings \citep[Fig. 69]{comstock1918wings}}
         \label{fig:lasiocampid1}
     \end{subfigure}
     \qquad %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
@@ -792,7 +760,7 @@ the vast majority of which are aquatic as larvae. Larvae exhibit diverse life hi
 
 \subsection{Limnephilidae (northern caddisflies)}
 %\begin{multicols}{2}
-\noindent{}\textit{Diagnostic characters:} Antennae usually about as long as body; ocelli present; fore tibiae with 1 spur or none; middle tibiae with 2 or 3 spurs; male maxillary palp 3-segmented, also often large; body usually brown with dark markings.\\
+\noindent{}\textit{Diagnostic characters:} Antennae usually about as long as body; ocelli present; fore tibiae with 1 spur or none; middle tibiae with 2 or 3 spurs; male maxillary palp 3-segmented, also often large; body usually brown with dark markings.\\ 
 
 \noindent{}\textit{Natural history:} Larvae make portable cases from a diverse array of materials, and they graze on algae or scavenge. This family also includes some unusual species that are terrestrial. \\
 
@@ -804,5 +772,9 @@ the vast majority of which are aquatic as larvae. Larvae exhibit diverse life hi
   \caption{Limnephilidae. Photo (CC BY-NC 2.0) by Lynette \url{https://flic.kr/p/aTNQJZ}}
   \label{fig:phryg}
 \end{figure}
+
+% adding bibliography here
+\bibliographystyle{apalike}
+\bibliography{bib}
 
 \end{document}
