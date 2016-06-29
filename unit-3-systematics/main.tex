@@ -1,0 +1,199 @@
+\documentclass[letterpaper, 11pt]{article}
+\usepackage{comment} % enables the use of multi-line comments (\ifx \fi) 
+\usepackage{fullpage} % changes the margin
+\usepackage{fancyhdr} % for footer
+\usepackage[UKenglish]{isodate}% http://ctan.org/pkg/isodate for date format
+\usepackage[letterpaper,margin=1in]{geometry}
+\usepackage{changepage}%for dichotomous key
+\usepackage{float}%force tables/figs into certain placement
+\usepackage{natbib}	%for bibliography
+\usepackage{placeins}%prevent images from floating into inappropriate sections
+\usepackage{subcaption}%for figures
+\usepackage{hyperref}%for links
+
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+
+\lhead{}
+\chead{}
+\rhead{}
+\lfoot{ENT 432 (Fall 2015) - Penn State}
+\cfoot{}
+\rfoot{\thepage}
+\renewcommand{\footrulewidth}{0.4pt}
+\title{Unit 3 - Systematics, past and present}
+\author{Open Entomology Project}
+\begin{document}
+\cleanlookdateon %removed ordinal date
+\maketitle
+\thispagestyle{fancy}
+\section*{Introduction}
+Systematists are charged with describing, naming, estimating evolutionary history, and classifying organisms. Here we cover the history of classification, so that you can understand the context of systematics today. \cite{EngelKristensen2013} provide a thorough review of this history if you're interested in more details.
+
+In this unit, we also remind ourselves of certain core concepts in evolution, which will facilitate our understanding of how Arthropoda radiated and evolved. We'll also discuss the kinds of data and analytical approaches (and even philosophies) we use to estimate evolutionary history (\textit{i.e}., phylogeny).
+
+\section*{Materials}
+
+\begin{itemize}
+\item specimens (provided; see list of taxa below)
+\item fine forceps, probes (provided)
+\item sorting tray, watch glasses, gloves, safety glasses, glycerine, ethanol (provided)
+\item pencil/paper for sketches
+\end{itemize}
+
+\subsection*{Taxa}
+
+\begin{enumerate}
+\item spider (Araneae)
+\item harvestmen (Opiliones)
+\item woodlouse (Isopoda)
+\item mayfly (Ephemeroptera)
+\item grasshopper (Orthoptera)
+\item backswimmer (Heteroptera: Notonectidae)
+\item planthopper (Hemiptera)
+\item ground beetle (Coleoptera: Carabidae)
+\item ground beetle bleached with H\textsubscript{2}O\textsubscript{2} (Coleoptera: Carabidae)
+\item weevil (Coleoptera: Curculionidae)
+\item moth (Lepidoptera)
+\item robber fly (Diptera: Asilidae)
+\item hover fly (Diptera: Syrphidae)
+\item wasp (Hymenoptera)
+\item sawfly (Hymenoptera)
+\item springtail (Collembola)
+\item antlion (Neuroptera: Myrmeleontidae)
+\end{enumerate}
+
+\section*{Safety}
+We will be working with sharp tools. Wear your personal protective gear at all times. Specimens are to be returned to their vials after lab, and glycerine will be collected for proper disposal or reuse.
+
+\section*{Methods}
+Working with a partner, organize your space, specimens, tools, and microscope. Use your probe and forceps to manipulate the specimen, and don’t be afraid to pull parts off or otherwise dissect the specimens. Use the provided morphology handout as a guide.
+
+\section{Hands-on systematics exercises}
+As you learned in the last lab, the external features of an arthropod, \textit{i.e}., the phenotypes we can easily observe through a microscope, are the primary source of characters we use to diagnose arthropods and to hypothesize evolutionary relationships. The goal of this lab is to review the morphological concepts you learned in the last lab and then to develop characters (descriptions of phenotypic variation) that help you, an inspired systematist, understand and communicate about Arthropoda.
+
+\subsection{Anatomy refresher (10--15 min)}
+Look at your last lab handout, and review your answers to the questions. Now see if you can generate a \textit{genus differentia} definition for each of the anatomical concepts below. Here is the typical structure of a \textit{genus differentia}: A \textit{species} is a \textit{genus} that (some description of how it differs from other species in that genus). Here is an example: A coffee is a hot beverage that is brewed from the seeds of \textit{Arabica} plants. ``Coffee'' is the \textit{species} here, and it belongs in the broader class ``hot beverage''. Coffee differs from other hot beverages by being the one that was brewed from the seeds of \textit{Arabica} plants (\textit{i.e}., this is the \textit{differentia}).\\
+
+A head is a \makebox[30 mm]{\hrulefill} that \hrulefill.\\ \\
+
+An ocellus is\\ \\
+
+An antenna is\\ \\
+
+A pedicel is\\ \\
+
+A mandible is\\ \\
+
+A maxilla is\\ \\
+
+A leg is\\ \\
+
+A fore leg is\\ \\
+
+A wing is\\ \\
+
+A fore wing is\\ \\
+
+A mesothorax is\\ \\
+
+\subsection{Character and matrix development (30 min)}
+Think of a \textbf{character} as a relatively broad class (parent) of possible phenotypes for a body part. ``Flagellomere shape'', ``femur color'', and ``claw presence'' are three examples of characters. Character states are more specific versions (children) of the character, and they're typically numbered arbitrarily from 0 to $\infty$:\\
+
+Flagellomere shape:	0 = flagellum round, 1 = flagellum square\\
+
+Femur color: 0 = femur red, 1 = femur orange, 2 = femur black\\
+
+Claw presence: 0 = present, 1 = absent\\
+
+With this list of characters, and a list of the taxa you're examining, we can score a matrix:
+\begin{table}[H]
+\centering
+\label{my-label}
+\begin{tabular}{lccc}
+                             & \multicolumn{1}{l}{flagellomere shape} & \multicolumn{1}{l}{femur color} & \multicolumn{1}{l}{claw presence} \\ \cline{2-4} 
+\multicolumn{1}{l|}{taxon A} & \multicolumn{1}{c|}{0}                 & \multicolumn{1}{c|}{0}          & \multicolumn{1}{c|}{1}            \\ \cline{2-4} 
+\multicolumn{1}{l|}{taxon B} & \multicolumn{1}{c|}{1}                 & \multicolumn{1}{c|}{2}          & \multicolumn{1}{c|}{1}            \\ \cline{2-4} 
+\multicolumn{1}{l|}{taxon C} & \multicolumn{1}{c|}{0}                 & \multicolumn{1}{c|}{1}          & \multicolumn{1}{c|}{0}            \\ \cline{2-4} 
+\end{tabular}
+\end{table}
+
+\noindent{}We can compute across matrices like this using software that provides us with phylogenetic trees and software that generates diagnostic tools (\textit{e.g}., multi-entry keys).\\
+
+\noindent{}Looking at your specimens see how many characters you can create. Mimic the descriptive style you see in the examples above, and score your taxa in a matrix. Us the back of this paper if necessary.\vspace{15cm}
+
+\subsection{Dichotomous keys (30 min)}
+Dichotomous keys are common diagnostic tools, and you will almost certainly use several in your efforts to determine specimens in your collection. They are composed from character sets, like the table you generated above and typically look like this (adapted from Borror \textit{et al}. (1989); ISBN 0-03-025397-7, page 151):\\
+
+\begin{adjustwidth}{1cm}{}
+1. With well-developed wings (adults) \dotfill{} 2\\
+1$'$. Wingless or with wings vestigial or rudimentary (nymphs, larvae, and some adults) \dotfill{} 30\\
+
+\noindent{}2(1). Wings membranous, not hardened or leathery \dotfill{} 3\\
+2$'$. Front wings hardened or leathery, at least at base; hind wings, if present, usually membranous \dotfill{}24\\
+\end{adjustwidth}
+
+\noindent{}Think of it almost as a series of if-then statements. If your specimen has well-developed wings then go to line 2. If those wings are membranous then go to line 3, \textit{etc}.\\
+
+\noindent{}Look through the key we provide in a separate handout. See any patterns? Try running a few of your specimens through the key. Can you write a dichotomous key using the characters you developed for your table? What kinds of characters would you use first: those that are easy to understand or those that separate the taxa into similarly-sized groups?\vspace{14cm}
+
+\subsection{Thinking phylogenetically (30 min)}
+Look at your list of characters. How many do you think provide evidence concerning the evolution of these organisms? Which states are ancestral and which ones are derived, and why? How many do you think are purely diagnostic, offering no usable information for understanding evolution?\\
+
+\noindent{}Now draw a phylogenetic tree that represents your hypothesis for the evolutionary history of your specimens. Your instructors will demonstrate how to do this on the board.\\
+
+\noindent{}Map your character states on the tree. Do your data support your tree? Can you see evidence of convergent evolution?\\
+
+\section{History, concepts, and people to know}
+\subsection{Systematists}
+If asked to describe the accomplishments of these people in 1--2 sentences could you do it? Could you arrange these figures chronoloically?
+
+\begin{enumerate} 
+\item{Aristotle} 
+\item{Maria Sibylla Merian}  
+\item{Carrolus Linn\ae{us}}  
+\item {Johann C. Fabricius}
+\item{John O. Westwood}  
+\item{Charles Darwin}  
+\item {Willi Hennig}
+\end{enumerate}
+
+\section*{Concepts}
+Could you write a couple sentences that explain each term? Can you provide examples?v
+
+\begin{enumerate} 
+\item{natural selection} 
+\item{adaptation}  
+\item{species}  
+\item {adaptive radiation}
+\item {monophyletic \textit{vs}. polyphyletic}  
+\item {homology \textit{vs}. homoplasy}  
+\item {ancestral \textit{vs}. derived}
+\end{enumerate}
+
+\section*{Bigger picture}
+What does ICZN stand for?\\
+
+\noindent{}Can you describe four principles of nomenclature?\\
+
+\noindent{}When is something considered ``validly published''?\\
+
+\noindent{}When is a name considered ``available''?\\
+
+\noindent{}What are the three most important ``types''?\\
+
+\noindent{}Can you describe three technologies or tools that allowed for major leaps forward in insect taxonomy? (You can probably think of more than three.)\\
+
+\noindent{}We discussed three types of data that are typically used to estimate phylogenies: phenotype (including behavior), ecology, and molecules (DNA, proteins, \textit{etc}.) Can you briefly describe some advantages and limitations of each data type?\\
+
+\noindent{}Can you describe the differences between a phenetic and a cladistic approach to phylogeny? What is our current approach to character and phylogeny interpretation? Could you interpret a phylogeny and make inferences on it if asked?\\
+
+\noindent{Data analysis in phylogenetics typically falls into three categories: parsimony, maximum likelihood, and Bayesian. Can you summarize the advantages and disadvantages of each one?}\\
+
+\section*{Acknowledgments}
+Andrew R. Deans and Istv\'an Mik\'o wrote the text. Many of the illustrations were generously made available by the Biodiversity Heritage Library (\url{http://biodiversitylibrary.org}) and the photographers at Flickr (\url{http://flickr.com}).
+\FloatBarrier
+% adding bibliography here
+\bibliographystyle{apalike}
+\bibliography{bib}
+\end{document}
