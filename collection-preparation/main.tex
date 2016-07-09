@@ -7,11 +7,19 @@
 \usepackage[font={small,sf}]{caption}
 \usepackage{float}%force tables/figs into certain placement
 \usepackage{graphicx}%for figures
+\usepackage[]{caption}
+\usepackage[leftcaption]{sidecap}%for figure captions
 \usepackage{subcaption}%for figures
 \usepackage{hyperref}%for hyperlinks
 \usepackage[font=small,labelfont=bf]{caption}%for captions
 \usepackage{natbib}	%for bibliography
 \usepackage{placeins}%prevent images from floating into inappropriate sections
+\usepackage{tabulary}%for table at the end, to get soft wrapping
+%\usepackage[capbesideposition=inside,facing=yes,capbesidesep=quad]{floatrow}
+
+
+\captionsetup[figure]{labelformat=empty}% redefines the caption setup of the figures environment in the beamer class.
+
 \def\labelitemi{--}
 
 \pagestyle{fancy}
@@ -32,10 +40,10 @@
 \maketitle
 \thispagestyle{fancy}
 
-this \citep{USDAmanual}
+The insect collection stands as a core exercise for this course, providing future students and researchers with evidence of your hard work and acquired knowledge and with specimens that serve as vouchers for natural history observations. In this light, proper collecting, specimen preparation, and curation methods are fundamental. This handout provides guidance on current best practices. You may also wish to consult the U.S. Department of Agriculture manual, updated by \cite{USDAmanual}, and other resources for more details regarding the approaches described or alluded to below. 
 
-\section{Supplies and Equipment}
-Some of the equipment needed to preserve and observe insects will be provided by us:
+\section*{Supplies and Equipment}
+Some of the equipment needed to observe, collect, and preserve insects will be provided by the instructors. Many of these supplies are also available through vendors like Bioquip (\url{https://www.bioquip.com/}):
 
 \begin{itemize}
 \item Vials, 4 dram with polyseal caps (Bioquip \# 8804P)
@@ -47,12 +55,14 @@ Some of the equipment needed to preserve and observe insects will be provided by
 \item Schmitt box(es)
 \item PSUC identifier labels
 \item Stereo- and compound microscopes (cannot leave the classroom)
-\item Soft-tipped forceps (available from Bioquip as product \#'s 4748 or 4750)
+\item Soft-tipped forceps (Bioquip \#'s 4748 or 4750)
 \item Waterproof pen for labels; a good option from Bioquip is the size 005 Pigma pen (black) \# 1154E. You can probably find these or their equivalent at an art supply store or even the PSU bookstore.
 \item ethyl acetate for kill jar
 \end{itemize}
 
-Slide-mounting and double-mounting supplies are available upon request, as is acetone for Odonata. We have collecting equipment that students members of the Friends of the Frost Museum can check out for short periods of time. This gear will also be available to everyone during field trips. Sharing is encouraged with this equipment:
+Slide-mounting and double-mounting supplies are available upon request, as is acetone for Odonata specimens. These kinds of specimen preparations will be done in the lab.\\
+
+We have collecting equipment that students members of the Friends of the Frost Entomological Museum can check out for short periods of time. See your instructors about how to check-out this gear. This gear will also be available to everyone during field trips. Sharing is encouraged with this equipment:
 
 \begin{itemize}
 \item UV/Hg-vapor lights with white sheet
@@ -65,7 +75,7 @@ Slide-mounting and double-mounting supplies are available upon request, as is ac
 \item Spreading board
 \end{itemize}
 
-We’ll show you make your very own:%will we?
+We can also show you how to make your very own:
  
 \begin{itemize}
 \item aspirator
@@ -73,7 +83,7 @@ We’ll show you make your very own:%will we?
 \end{itemize}
 
 
-\section{Preparing Hexapoda}
+\section*{Preparing Hexapoda}
 A rough guide to preservation preferences---which taxa are pinned vs. slide-mounted, etc.---is provided in the Appendix. See the end of this document.\\
 
 Pinning.---Pinning is the best way to preserve hard-bodied, medium to large hexapods. One should use specially made insect pins, rather than common pins used in sewing and other crafts. Insect pins range in size from 000 (VERY thin and mostly unmanageable) to 7 (very thick and longer than most pins). We recommend sizes 1, 2 (especially), and 3 for use in this class. The best way to pin an insect is to:
@@ -94,7 +104,7 @@ Alcohol.---Hexapods preserved in \textgreater95\% alcohol are best for DNA extra
 
 Slide Mounting.---See separate slide mounting handout.
 
-\section{Locality Labels}
+\section*{Locality Labels}
 
 Labels can take many forms, but you generally want to adhere to the following formats:
 
@@ -134,7 +144,7 @@ Adapted from a summary by L. L. Deitz, NC State University.%add link to beetles 
 \item package with 2 inches on each side between Schmitt box and bigger package, filled with packing material
 \end{enumerate}
 
-\subsection{Slides}
+\subsection*{Slides}
 
 \begin{enumerate}
 \item make sure they are double boxed similar to Schmitt box
@@ -143,7 +153,7 @@ Adapted from a summary by L. L. Deitz, NC State University.%add link to beetles 
 \item if in slide box, place packing material between top of slides and lid to prevent breakage
 \end{enumerate}
 
-\subsection{Vials}
+\subsection*{Vials}
 \begin{enumerate}
 \item avoid air bubbles and “burp” vials
 \item wrap each vial in paper towel or bubble wrap to separate from other vials
@@ -151,6 +161,195 @@ Adapted from a summary by L. L. Deitz, NC State University.%add link to beetles 
 \end{enumerate}
 
 %cheat sheet for specimen preps
+\clearpage
+\section*{Appendix. Insect preservation guide}
+
+\begin{figure}[h!]
+    \centering
+    \begin{subfigure}[b]{0.28\textwidth}
+        \includegraphics[width=\textwidth]{Protura}
+        \caption{Protura. Andy Murray (CC BY-SA 2.0) \url{https://flic.kr/p/eaKZ2B}}
+        \label{fig:protura}
+    \end{subfigure}
+    ~ 
+    \begin{subfigure}[b]{0.32\textwidth}
+        \includegraphics[width=\textwidth]{Diplura}
+        \caption{Diplura. Marshal Hedin (CC BY-SA 2.0) \url{https://flic.kr/p/e9kGSw}}
+        \label{fig:diplura}
+    \end{subfigure}
+    ~ 
+    \begin{subfigure}[b]{0.28\textwidth}
+        \includegraphics[width=\textwidth]{Collembola}
+        \caption{Collembola. Andy Murray (CC BY-SA 2.0) \url{https://flic.kr/p/bJCR9e}}
+        \label{fig:collembola}
+    \end{subfigure}
+    \caption{\textbf{Entognatha}. Traditionally these hexapods are slide-mounted. For this class, they can be preserved in vials, with ethanol or glycerol as the preservative.}
+    \label{fig:entognatha}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \begin{subfigure}[t]{0.42\textwidth}
+        \includegraphics[width=\textwidth]{Archeognatha}
+        \caption{Archaeognatha. Henry Lydecker (CC BY-NC 2.0) \url{https://flic.kr/p/dgRtaW}}
+        \label{fig:archeognatha}
+    \end{subfigure}
+    ~ 
+    \begin{subfigure}[t]{0.4\textwidth}
+        \includegraphics[width=\textwidth]{Zygentoma}
+        \caption{Zygentoma. Jean-Rapha\"{e}l Guillaumin (CC BY-SA 2.0) \url{https://flic.kr/p/czibHd}}
+        \label{fig:zygentoma}
+    \end{subfigure}
+    \caption{\textbf{Non-pterygote Insecta}. These insects can be preserved in vials, with ethanol or glycerol as the preservative.}
+    \label{fig:winglesshexapods}
+\end{figure}
+
+\begin{SCfigure}[][h!]
+  \caption{\textbf{Ephemeroptera} (mayflies). Adults and juvenile stages of these insects  are preserved in vials with ethanol or glycerol. Adults are usually quite fragile, so be careful!\\ Photo: Magnus Hagdorn (CC BY-SA 2.0) \url{https://flic.kr/p/ffsx8c}}
+  \includegraphics[width=0.45\textwidth]{Ephemeroptera}
+\end{SCfigure}
+
+\begin{SCfigure}[][h!]
+  \caption{\textbf{Odonata} (dragonflies and damselflies). Odonata should be kept alive in a glassine envelope or paper triangle, until they can be euthanized and subsequently soaked with acetone. Dried specimens are then preserved with a 3$\times$5 card, inside a cellophane envelope. Larvae are always preserved in vials with ethanol or glycerol.\\ Photo: Andy Deans (CC BY 2.0) \url{https://flic.kr/p/oa95N7}}
+  \includegraphics[width=0.45\textwidth]{Odonata}
+\end{SCfigure}
+
+\begin{SCfigure}[][h!]
+  \caption{\textbf{Phasmatodea} (walking stick, stick insects, leaf insects). These insects should be pinned in a way that minimizes their size (legs and antennae close to body). Never spread their wings. Nymphs are always preserved in vials with ethanol or glycerol. \\ Photo: Norman Walsh (CC BY-NC 2.0) \url{https://flic.kr/p/3gcGh5}}
+  \includegraphics[width=0.45\textwidth]{Phasmatodea}
+\end{SCfigure}
+
+\begin{SCfigure}[][h!]
+  \caption{\textbf{Orthoptera} (grasshoppers, crickets, katydids). These insects should be pinned in a way that minimizes their size (legs and antennae close to body). The gut of large specimens should be removed prior to pinning (sharp forceps under the posterior edge of pronotum). Left wings could be spread. Nymphs, crickets (Gryllidae), and other soft-bodied orthopterans go in ethanol.\\ Photo: Andreas Kay (CC BY-NC-SA 2.0) \url{https://flic.kr/p/mR5QLa}}
+  \includegraphics[width=0.45\textwidth]{Orthoptera}
+\end{SCfigure}
+
+\begin{SCfigure}[][h!]
+  \caption{\textbf{Grylloblattodea}. These insects can be preserved in vials, with ethanol or glycerol as the preservative.\\ Photo: Alex Wild (CC0) \url{https://goo.gl/DAU1HJ} (Wikimedia Commons)}
+  \includegraphics[width=0.45\textwidth]{Grylloblattodea}
+\end{SCfigure}
+
+\clearpage
+
+\begin{SCfigure}[][h!]
+  \caption{\textbf{Mantophasmatodea}. These insects can be preserved in vials, with ethanol or glycerol as the preservative.\\ Photo: P. E. Bragg (CC BY-SA 3.0) \url{https://goo.gl/kpnn99} (Wikimedia Commons)}
+  \includegraphics[width=0.45\textwidth]{Mantophasmatodea}
+\end{SCfigure}
+
+\begin{SCfigure}[][h!]
+  \caption{\textbf{Dermaptera} (earwigs). Adult dermapterans should be pinned or pointed. Nymphs are always preserved in vials with ethanol or glycerol.\\ Photo: Mick E. Talbot (CC BY-NC-SA 2.0) \url{https://flic.kr/p/baT4zp}}
+  \includegraphics[width=0.45\textwidth]{Dermaptera}
+\end{SCfigure}
+
+\begin{SCfigure}[][h!]
+  \caption{\textbf{Non-isopteran Dictyoptera} (cockroaches, mantids). These insects should be pinned/pointed in a way that minimizes their size (legs and antennae close to body). Never spread their wings. Genitalia are important for determination, so make sure they’re exposed. Nymphs are always preserved in vials with ethanol or glycerol.}
+  \includegraphics[width=0.45\textwidth]{Blattodea}
+\end{SCfigure}
+
+\begin{SCfigure}[][h!]
+  \caption{\textbf{Dictyoptera: Isoptera} (termites). Termites are always preserved in vials with ethanol or glycerol. \\ Photo: Stevenw12339 (CC BY-NC 2.0) \url{https://flic.kr/p/fAdvLc}}
+  \includegraphics[width=0.45\textwidth]{BlattodeaIsoptera}
+\end{SCfigure}
+
+\clearpage
+
+\begin{SCfigure}[][h!]
+  \caption{\textbf{Embioptera} (webspinners). These insects are preserved in vials with ethanol or glycerol.\\ Photo: Bill \& Mark Bell (CC BY-NC-SA 2.0) \url{https://flic.kr/p/cCJB7S}}
+  \includegraphics[width=0.45\textwidth]{Embioptera}
+\end{SCfigure}
+
+\begin{SCfigure}[][h!]
+  \caption{\textbf{Zoraptera}. These insects are preserved in vials with ethanol or glycerol. \\ Photo: David Maddison (CC BY 3.0) \url{http://goo.gl/hSP3EW} (tolweb.org)}
+  \includegraphics[width=0.45\textwidth]{Zoraptera}
+\end{SCfigure}
+
+\begin{SCfigure}[][h!]
+  \caption{\textbf{Plecoptera} (stoneflies). These insects are preserved in vials with ethanol or glycerol.\\ Photo: Bernard DuPont (CC BY-SA 2.0) \url{https://flic.kr/p/dKDmYT}}
+  \includegraphics[width=0.45\textwidth]{Plecoptera}
+\end{SCfigure}
+
+\begin{SCfigure}[][h!]
+  \caption{\textbf{Thysanoptera} (thrips). Traditionally these insects are slide-mounted. For this class, they can be preserved in vials with ethanol or glycerol.\\ Photo: Katja Schulz (CC BY 2.0) \url{https://flic.kr/p/q6LxBS}}
+  \includegraphics[width=0.45\textwidth]{Thysanoptera}
+\end{SCfigure}
+
+\clearpage
+
+\begin{SCfigure}[][h!]
+  \caption{\textbf{Psocodea} (bark lice, book lice, parasitic lice). Traditionally these insects are slide-mounted. For this class, they can be preserved in vials with ethanol or glycerol.\\ Photo: Ken Schneider (CC BY-NC 2.0) \url{https://flic.kr/p/mX6h9D}}
+  \includegraphics[width=0.45\textwidth]{PsocodeaBark}
+\end{SCfigure}
+
+\begin{SCfigure}[][h!]
+  \caption{\textbf{Hemiptera: Heteroptera, Auchenorrhyncha} (true bugs, hoppers). These insects should be pinned/pointed. Nymphs are always preserved in vials with ethanol or glycerol.\\ Photo: NY State IPM Program (CC BY 2.0) \url{https://flic.kr/p/guTgFA}}
+  \includegraphics[width=0.45\textwidth]{HemipteraHeteroptera}
+\end{SCfigure}
+
+\begin{SCfigure}[][h!]
+  \caption{\textbf{Hemiptera: Sternorrhyncha} (scale insects, aphids). These insects are traditionally slide-mounted. For this class, they can be preserved in vials with ethanol or glycerol.\\ Photo: Jon Sullivan (CC BY-NC 2.0) \url{https://flic.kr/p/oSAp1Y}}
+  \includegraphics[width=0.45\textwidth]{HemipteraSternorrhyncha}
+\end{SCfigure}
+
+\clearpage
+
+\begin{SCfigure}[][h!]
+  \caption{\textbf{Mecoptera} (scorpionflies). These insects should be pinned/pointed. Never spread their wings. Exception: Boreidae (snow scorpionflies) and all larvae should be preserved in vials with ethanol or glycerol.\\ Photo: Orest Shvadchak (CC BY-SA 2.0) \url{https://flic.kr/p/945m9F}}
+  \includegraphics[width=0.45\textwidth]{Mecoptera}
+\end{SCfigure}
+
+\begin{SCfigure}[][h!]
+  \caption{\textbf{Siphonaptera} (fleas). Traditionally these insects are slide-mounted. For this class, they can be preserved in vials with ethanol or glycerol.\\ Photo: AFPMB (CC0) \url{https://flic.kr/p/9bKUYn}}
+  \includegraphics[width=0.45\textwidth]{Siphonaptera}
+\end{SCfigure}
+
+\begin{SCfigure}[][h!]
+  \caption{\textbf{Diptera} (flies, gnats, mosquitoes). These insects should be pinned/pointed in a way that one can view all sclerites (\textit{i.e.}, legs pulled away from body). Wing veins and bristle patterns are important for diagnosis. Exceptions: Small, dainty flies, with soft cuticle (\textit{e.g.}, Cecidomyiidae (gall midges)) and larvae should be preserved in vials with ethanol or glycerol. Also, scaly flies, like mosquitoes, should be double-mounted, with the minuten entering the thorax dextrally.\\ Photo: Troup Dresser (CC BY-NC 2.0) \url{https://flic.kr/p/cYaAPo}}
+  \includegraphics[width=0.45\textwidth]{Diptera}
+\end{SCfigure}
+
+\clearpage
+
+\begin{SCfigure}[][h!]
+  \caption{\textbf{Lepidoptera} (moths, butterflies). These insects should be pinned or double-mounted, depending on their size. Wings must be spread, as color patterns and wing venation are important. Larvae should be preserved in vials with ethanol or glycerol.\\ Photo: Andy Reago \& Chrissy McClarren (CC BY 2.0) \url{https://flic.kr/p/ofEZW6}}
+  \includegraphics[width=0.45\textwidth]{Lepidoptera}
+\end{SCfigure}
+
+\begin{SCfigure}[][h!]
+  \caption{\textbf{Trichoptera} (caddisflies). These insects are preserved in vials with ethanol or glycerol.\\ Photo: Macroscopic Solutions (CC BY-NC 2.0) \url{https://flic.kr/p/o4e7U7}}
+  \includegraphics[width=0.45\textwidth]{Trichoptera}
+\end{SCfigure}
+
+\begin{SCfigure}[][h!]
+  \caption{\textbf{Neuroptera} (lacewings, antlions, mantisflies). These insects should be pinned/pointed in a way that minimizes their size (legs and antennae close to body). Never spread their wings. Larvae are preserved in vials with ethanol or glycerol.\\ Photo: Mick E. Talbot (CC BY 2.0) \url{https://flic.kr/p/6mWUDw}}
+  \includegraphics[width=0.45\textwidth]{Neuroptera}
+\end{SCfigure}
+
+\begin{SCfigure}[][h!]
+  \caption{\textbf{Megaloptera} (dobsonflies, fishflies, alderflies). These insects should be pinned/pointed in a way that minimizes their size (legs and antennae close to body). Never spread their wings. Larvae are preserved in vials with ethanol or glycerol.\\ Photo: Ronald Orosz (CC BY-NC 2.0) \url{https://flic.kr/p/4TEtzq}}
+  \includegraphics[width=0.45\textwidth]{Megaloptera}
+\end{SCfigure}
+
+\clearpage
+
+\begin{SCfigure}[][h!]
+  \caption{\textbf{Raphidioptera} (snakeflies). These insects should be pinned/pointed in a way that minimizes their size (legs and antennae close to body). Never spread their wings. Larvae are preserved in vials with ethanol or glycerol.\\ Photo: Tab Tannery (CC BY-NC-SA 2.0) \url{https://flic.kr/p/92UMz6}}
+  \includegraphics[width=0.45\textwidth]{Raphidioptera}
+\end{SCfigure}
+
+\begin{SCfigure}[][h!]
+  \caption{\textbf{Strepsiptera} (twisted-wing parasites). Traditionally these hexapods are slide-mounted. For this class, they can be preserved in vials with ethanol or glycerol. An infected host (\textit{e.g.}, a vespid wasp) should be preserved according to that taxon’s suggested method.\\ Image: J. Sowerby (CC0), via Biodiversity Heritage Library \url{https://flic.kr/p/a9W5Qa}}
+  \includegraphics[width=0.45\textwidth]{Strepsiptera}
+\end{SCfigure}
+
+\begin{SCfigure}[][h!]
+  \caption{\textbf{Coleoptera} (beetles). These insects should be pinned/pointed. Ventral characteristics of the thorax are important for diagnosis, as are features of the legs, so make sure they are observable. Never spread their wings. Larvae are preserved in vials with ethanol or glycerol.\\ Photo: Gilles San Martin (CC BY-SA 2.0) \url{https://flic.kr/p/hCtNmf}}
+  \includegraphics[width=0.45\textwidth]{Coleoptera}
+\end{SCfigure}
+
+\begin{SCfigure}[][h!]
+  \caption{\textbf{Hymenoptera} (sawflies, wasps, ants, bees). These insects should be pinned/pointed. Exceptions: Small, dainty hymenopterans with soft cuticle (e.g., most Chalcidoidea) and larvae should be preserved in vials with ethanol or glycerol.\\ Photo: Patrick\_K59 (CC BY 2.0) \url{https://flic.kr/p/peXyQ8}}
+  \includegraphics[width=0.45\textwidth]{Hymenoptera}
+\end{SCfigure}
 
 % adding bibliography here
 \bibliographystyle{apalike}
