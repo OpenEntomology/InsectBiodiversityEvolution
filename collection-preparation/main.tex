@@ -1,4 +1,5 @@
 \documentclass[letterpaper, 11pt]{article}
+\usepackage{epigrafica}%changes default font to epigrafica
 \usepackage{comment} % enables the use of multi-line comments (\ifx \fi) 
 \usepackage{fullpage} % changes the margin
 \usepackage{fancyhdr} % for footer
@@ -16,8 +17,11 @@
 \usepackage{placeins}%prevent images from floating into inappropriate sections
 \usepackage{tabulary}%for table at the end, to get soft wrapping
 %\usepackage[capbesideposition=inside,facing=yes,capbesidesep=quad]{floatrow}
+\usepackage{epigrafica}%changes default font to epigrafica
+\usepackage[LGR,OT1]{fontenc}
 \newenvironment{labelfontsmall}{\fontfamily{phv}\selectfont}{\par}%for label font example
-\usepackage[T1]{fontenc}
+%\usepackage[T1]{fontenc}
+
 %\captionsetup[figure]{labelformat=empty}% redefines the caption setup of the figures environment in the beamer class.
 
 \def\labelitemi{--}
