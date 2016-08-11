@@ -5,6 +5,10 @@
 \usepackage{fullpage} % changes the margin
 \usepackage{fancyhdr} % for footer
 \usepackage[UKenglish]{isodate}% http://ctan.org/pkg/isodate for date format
+\usepackage{epigrafica}%changes default font to epigrafica
+\usepackage{hyperref}%for URLs
+\usepackage[]{natbib}
+\newcommand*{\doi}[1]{\href{http://dx.doi.org/#1}{doi: #1}}% links DOI
 
 \pagestyle{fancy}
 \renewcommand{\headrulewidth}{0pt}
@@ -17,33 +21,37 @@
 \rfoot{\thepage}
 \renewcommand{\footrulewidth}{0.4pt}
 \title{Unit 1 - What are arthropods? What is systematics?}
-\author{Andrew R. Deans and Istv\'an Mik\'o}
+\author{Open Entomology Project}
+
 \begin{document}
 \cleanlookdateon %removed ordinal date
 \maketitle
 \thispagestyle{fancy}
 \section*{Introduction}
-In this module we will discuss systematics as a field of research, touch on the importance of specimens \cite{voucher} and introduce ourselves to the taxonomic focus of this course: Arthropoda. Read the course syllabus \cite{syllabus} and familiarize yourself with the grading policy, dates of exams and due dates for assignments, \textit{etc}.
+In this module we will discuss systematics as a field of research, and we'll touch on the importance of specimens as data, references, and vouchers \citep{vouchers}. Read the course syllabus and familiarize yourself with the grading policy, dates of exams and due dates for assignments, \textit{etc}. We'll also discuss some ethical issues regarding the collection of organisms, and we'll learn how to make specimen preps.
 
 \section*{Concepts}
 Could you explain the following terms to one of your peers?
-
 \begin{enumerate} 
-\item{nomenclature} 
-\item{classification}  
-\item{phylogenetics}  
-\item{natural history}
-\item{Arthropoda}  
-\item{Hexapoda}  
-\item{Insecta}  
+\item Arthropoda
+\item classification
+\item Hexapoda
+\item Insecta
+\item nomenclature
+\item phylogenetics 
 \end{enumerate}
 
-\section*{Bigger picture}
-Can you draw a phylogeny and interpret its meaning?
 
-\begin{thebibliography}{9}%do we want to add references to these handouts?
-\bibitem{syllabus} Deans, A. R. \textit{Insect Biodiversity and Evolution}. Fall 2016 syllabus.
-\bibitem{voucher} Turney S., Cameron E. R., Cloutier C. A., Buddle C. M. (2015) Non-repeatable science: assessing the frequency of voucher specimen deposition reveals that most arthropod research cannot be verified. \textit{PeerJ} 3:e1168 DOI: 10.7717/peerj.1168
-\end{thebibliography}
+
+\section*{Bigger picture}
+Can you draw a phylogeny and interpret its meaning? Why are these diagrams important?\\
+
+\noindent{}Could you explain to a friend how this class is graded?\\
+
+\noindent{}Can you describe a few ethical issues we need to consider when collecting organisms? If you were to edit the Insect Collector's Oath \citep{oath} how would you change it?
+
+% adding bibliography here
+\bibliographystyle{myplainnat}
+\bibliography{bib}
 
 \end{document}
