@@ -10,6 +10,10 @@
 \usepackage{placeins}%prevent images from floating into inappropriate sections
 \usepackage{subcaption}%for figures
 \usepackage{hyperref}%for links
+\newcommand*{\doi}[1]{\href{http://dx.doi.org/#1}{doi: #1}}% links DOI
+\usepackage{epigrafica}%changes default font to epigrafica
+\newcommand{\latinword}[1]{\texttt{\itshape #1}}%use \latinword for vocab
+\def\labelitemi{--} %change bullet to em dash
 
 \pagestyle{fancy}
 \renewcommand{\headrulewidth}{0pt}
@@ -17,7 +21,7 @@
 \lhead{}
 \chead{}
 \rhead{}
-\lfoot{ENT 432 (Fall 2015) - Penn State}
+\lfoot{ENT 432 (Fall 2016) - Penn State}
 \cfoot{}
 \rfoot{\thepage}
 \renewcommand{\footrulewidth}{0.4pt}
@@ -32,16 +36,54 @@ Systematists are charged with describing, naming, estimating evolutionary histor
 
 In this unit, we also remind ourselves of certain core concepts in evolution, which will facilitate our understanding of how Arthropoda radiated and evolved. We'll also discuss the kinds of data and analytical approaches (and even philosophies) we use to estimate evolutionary history (\textit{i.e}., phylogeny).
 
-\section*{Materials}
+\section{History, concepts, and people to know}
+We'll open this unit with a discussion and slideshow about the history of systematics, as it relates to arthropods, and a reintroduction to evolutionary concepts. Takes notes and think about the following questions before moving on to lab-oriented exercises.
+\subsection{Systematists}
+If asked to describe the accomplishments of these people in 1--2 sentences could you do it? Could you arrange these figures chronologically?
+
+\begin{enumerate} 
+\item{Aristotle} 
+\item{Charles Darwin}  
+\item {Johann C. Fabricius}
+\item {Willi Hennig}
+\item{Carrolus Linn\ae{us}}  
+\item{Maria Sibylla Merian}  
+\item{John O. Westwood}  
+\end{enumerate}
+
+\subsection{Concepts}
+Could you write a couple sentences that explain each term? Can you provide examples?
+
+\begin{enumerate} 
+\item{natural selection} 
+\item{adaptation}  
+\item{species}  
+\item {adaptive radiation}
+\item {monophyletic \textit{vs}. polyphyletic}  
+\item {homology \textit{vs}. homoplasy}  
+\item {ancestral \textit{vs}. derived}
+\end{enumerate}
+
+\noindent{}Can you describe three technologies or tools that allowed for major leaps forward in insect taxonomy? (You can probably think of more than three.)\\
+
+\noindent{}We discussed three types of data that are typically used to estimate phylogenies: phenotype (including behavior), ecology, and molecules (DNA, proteins, \textit{etc}.) Can you briefly describe some advantages and limitations of each data type?\\
+
+\noindent{}Can you describe the differences between a phenetic and a cladistic approach to phylogeny? What is our current approach to character and phylogeny interpretation? \\
+
+\noindent{Data analysis in phylogenetics typically falls into three categories: parsimony, maximum likelihood, and Bayesian. Do you understand the differences between these approaches?}\\
+
+\section{Hands-on systematics exercises}
+As you learned in Unit 2, the external features of an arthropod, \textit{i.e}., the phenotypes we can easily observe through a microscope, are the primary source of characters we use to diagnose arthropods and to hypothesize evolutionary relationships. The goal of this lab is to review the morphological concepts you learned in the last unit and then to develop characters (descriptions of phenotypic variation) that help you, an inspired systematist, understand and communicate about Arthropoda.
+
+\subsection*{Materials}
 
 \begin{itemize}
-\item specimens (provided; see list of taxa below)
 \item fine forceps, probes (provided)
 \item sorting tray, watch glasses, gloves, safety glasses, glycerine, ethanol (provided)
-\item pencil/paper for sketches
+\item {lab notebook (\textit{not} provided!)}
 \end{itemize}
 
-\subsection*{Taxa}
+\subsection*{Specimens}
 
 \begin{enumerate}
 \item spider (Araneae)
@@ -67,38 +109,19 @@ In this unit, we also remind ourselves of certain core concepts in evolution, wh
 We will be working with sharp tools. Wear your personal protective gear at all times. Specimens are to be returned to their vials after lab, and glycerine will be collected for proper disposal or reuse.
 
 \section*{Methods}
-Working with a partner, organize your space, specimens, tools, and microscope. Use your probe and forceps to manipulate the specimen, and don’t be afraid to pull parts off or otherwise dissect the specimens. Use the provided morphology handout as a guide.
-
-\section{Hands-on systematics exercises}
-As you learned in the last lab, the external features of an arthropod, \textit{i.e}., the phenotypes we can easily observe through a microscope, are the primary source of characters we use to diagnose arthropods and to hypothesize evolutionary relationships. The goal of this lab is to review the morphological concepts you learned in the last lab and then to develop characters (descriptions of phenotypic variation) that help you, an inspired systematist, understand and communicate about Arthropoda.
+Working with a partner, organize your space, specimens, tools, and microscope. Use your probe and forceps to manipulate the specimen, and don't be afraid to pull parts off or otherwise dissect the specimens. Use the Unit 2 morphology handout as a guide.
 
 \subsection{Anatomy refresher (10--15 min)}
-Look at your last lab handout, and review your answers to the questions. Now see if you can generate a \textit{genus differentia} definition for each of the anatomical concepts below. Here is the typical structure of a \textit{genus differentia}: A \textit{species} is a \textit{genus} that (some description of how it differs from other species in that genus). Here is an example: A coffee is a hot beverage that is brewed from the seeds of \textit{Arabica} plants. ``Coffee'' is the \textit{species} here, and it belongs in the broader class ``hot beverage''. Coffee differs from other hot beverages by being the one that was brewed from the seeds of \textit{Arabica} plants (\textit{i.e}., this is the \textit{differentia}).\\
+Look at your lab notebook, and review your answers to the Unit 2 questions. Let's see if we can write formal  definitions for some of the concepts we learned. Here is the typical structure of a \textit{genus differentia}: A \textit{species} is a \textit{genus} that (some description of how it differs from other species in that genus). Here is an example: A coffee is a hot beverage that is brewed from the seeds of \textit{Arabica} plants. ``Coffee'' is the species here, and it belongs in the broader class (the Genus) ``hot beverage''. Coffee differs from other hot beverages by being the one that was brewed from the seeds of \textit{Arabica} plants (\textit{i.e}., this is the \textit{differentia}).\\
 
-A head is a \makebox[30 mm]{\hrulefill} that \hrulefill.\\ \\
+\hangindent2em\textbf{Question 3-1:} Can you generate a \textit{genus differentia} definition for this anatomical concept: \\
 
-An ocellus is\\ \\
+A \latinword{head} is a \makebox[30 mm]{\hrulefill} that \hrulefill.\\ \\
 
-An antenna is\\ \\
-
-A pedicel is\\ \\
-
-A mandible is\\ \\
-
-A maxilla is\\ \\
-
-A leg is\\ \\
-
-A fore leg is\\ \\
-
-A wing is\\ \\
-
-A fore wing is\\ \\
-
-A mesothorax is\\ \\
+\hangindent2em{}What about for \latinword{ocellus}, \latinword{antenna}, \latinword{pedicel}, \latinword{mandible}, \latinword{maxilla}, \latinword{leg}, \latinword{fore leg}, \latinword{wing}, \latinword{fore wing}, \latinword{mesothorax}? \\
 
 \subsection{Character and matrix development (30 min)}
-Think of a \textbf{character} as a relatively broad class (parent) of possible phenotypes for a body part. ``Flagellomere shape'', ``femur color'', and ``claw presence'' are three examples of characters. Character states are more specific versions (children) of the character, and they're typically numbered arbitrarily from 0 to $\infty$:\\
+Think of a \textbf{character} as a relatively broad class of possible phenotypes for a body part. ``Flagellomere shape'', ``femur color'', and ``claw presence'' are three examples of characters. Character states are more specific versions of the character, and they're typically numbered arbitrarily from 0 to $\infty$:\\
 
 Flagellomere shape:	0 = flagellum round, 1 = flagellum square\\
 
@@ -120,7 +143,7 @@ With this list of characters, and a list of the taxa you're examining, we can sc
 
 \noindent{}We can compute across matrices like this using software that provides us with phylogenetic trees and software that generates diagnostic tools (\textit{e.g}., multi-entry keys).\\
 
-\noindent{}Looking at your specimens see how many characters you can create. Mimic the descriptive style you see in the examples above, and score your taxa in a matrix. Us the back of this paper if necessary.\vspace{15cm}
+\hangindent2em\textbf{Question 3-2:} Looking at your specimens, see how many characters you can create. Mimic the descriptive style you see in the examples above, and score your taxa in a matrix. \\
 
 \subsection{Dichotomous keys (30 min)}
 Dichotomous keys are common diagnostic tools, and you will almost certainly use several in your efforts to determine specimens in your collection. They are composed from character sets, like the table you generated above and typically look like this (adapted from Borror \textit{et al}. (1989); ISBN 0-03-025397-7, page 151):\\
@@ -135,65 +158,76 @@ Dichotomous keys are common diagnostic tools, and you will almost certainly use 
 
 \noindent{}Think of it almost as a series of if-then statements. If your specimen has well-developed wings then go to line 2. If those wings are membranous then go to line 3, \textit{etc}.\\
 
-\noindent{}Look through the key we provide in a separate handout. See any patterns? Try running a few of your specimens through the key. Can you write a dichotomous key using the characters you developed for your table? What kinds of characters would you use first: those that are easy to understand or those that separate the taxa into similarly-sized groups?\vspace{14cm}
+\noindent{}Look through the key we provide in a separate handout. See any patterns? Try running a few of your specimens through the key. \\
+
+\hangindent2em\textbf{Question 3-3:} Write a dichotomous key using the characters you developed for Question 3-2. What kinds of characters would you use first, those that are easy to understand or those that separate the taxa into similarly-sized groups?\\
 
 \subsection{Thinking phylogenetically (30 min)}
-Look at your list of characters. How many do you think provide evidence concerning the evolution of these organisms? Which states are ancestral and which ones are derived, and why? How many do you think are purely diagnostic, offering no usable information for understanding evolution?\\
+Look at your list of characters and ask yourself how many provide evidence concerning the evolution of these organisms. Which states are ancestral and which ones are derived, and why? How many do you think are purely diagnostic, offering no usable information for understanding evolution?\\
 
-\noindent{}Now draw a phylogenetic tree that represents your hypothesis for the evolutionary history of your specimens. Your instructors will demonstrate how to do this on the board.\\
+\hangindent2em\textbf{Question 3-4:} Draw a phylogenetic tree that represents your hypothesis for the evolutionary history of your specimens. Your instructors will demonstrate how to do this on the board. Map your character states on the tree. Do your data support your tree? Can you see evidence of convergent evolution?\\
 
-\noindent{}Map your character states on the tree. Do your data support your tree? Can you see evidence of convergent evolution?\\
+\subsection{Solving nomenclatural problems (30 min)}
 
-\section{History, concepts, and people to know}
-\subsection{Systematists}
-If asked to describe the accomplishments of these people in 1--2 sentences could you do it? Could you arrange these figures chronoloically?
+We'll discuss the \cite{iczn} and its Code, portions of which are in the appendix of this handout. Read the following descriptions nomenclatural problems, and see if you can find solutions in the pieces of the Code given to you in this handout. \\
 
-\begin{enumerate} 
-\item{Aristotle} 
-\item{Maria Sibylla Merian}  
-\item{Carrolus Linn\ae{us}}  
-\item {Johann C. Fabricius}
-\item{John O. Westwood}  
-\item{Charles Darwin}  
-\item {Willi Hennig}
-\end{enumerate}
+\hangindent2em\textbf{Question 3-5:} Linn\ae{}us described the Honey Bee in 1758, naming it \textit{Apis mellifera}. Joe Schmoe insists on calling these insects \textit{Honeyus beeus}, however, because he found this name in an even older volume (1725), by another author. Joe thinks \textit{Honeyus beeus} should have priority, as spelled out in Article 23. What is the correct name? Which article resolves this conundrum?\\
 
-\section*{Concepts}
-Could you write a couple sentences that explain each term? Can you provide examples?v
+\hangindent2em\textbf{Question 3-6:} Jane Doe tries to publish a new species name with a modern twist---a crane fly named \textit{Tipula p0k3m0norum} Doe, 2016. The peer review process informs her that this is not possible. Which article do her peers reference in their critique?
 
-\begin{enumerate} 
-\item{natural selection} 
-\item{adaptation}  
-\item{species}  
-\item {adaptive radiation}
-\item {monophyletic \textit{vs}. polyphyletic}  
-\item {homology \textit{vs}. homoplasy}  
-\item {ancestral \textit{vs}. derived}
-\end{enumerate}
+\hangindent2em\textbf{Question 3-7:} Frustrated with the high expense and slow rate of scientific publication (and the constant rejection of manuscripts by his peers), Randy Bobandy decides to self-publish all new species. He prints his manuscripts in his mom's basement, avoids peer-review, and mails them to several local libraries to be archived. Are these new names available? Why or why not?
 
-\section*{Bigger picture}
-What does ICZN stand for?\\
-
-\noindent{}Can you describe four principles of nomenclature?\\
-
-\noindent{}When is something considered ``validly published''?\\
-
-\noindent{}When is a name considered ``available''?\\
-
-\noindent{}What are the three most important ``types''?\\
-
-\noindent{}Can you describe three technologies or tools that allowed for major leaps forward in insect taxonomy? (You can probably think of more than three.)\\
-
-\noindent{}We discussed three types of data that are typically used to estimate phylogenies: phenotype (including behavior), ecology, and molecules (DNA, proteins, \textit{etc}.) Can you briefly describe some advantages and limitations of each data type?\\
-
-\noindent{}Can you describe the differences between a phenetic and a cladistic approach to phylogeny? What is our current approach to character and phylogeny interpretation? Could you interpret a phylogeny and make inferences on it if asked?\\
-
-\noindent{Data analysis in phylogenetics typically falls into three categories: parsimony, maximum likelihood, and Bayesian. Can you summarize the advantages and disadvantages of each one?}\\
-
-\section*{Acknowledgments}
-Andrew R. Deans and Istv\'an Mik\'o wrote the text. Many of the illustrations were generously made available by the Biodiversity Heritage Library (\url{http://biodiversitylibrary.org}) and the photographers at Flickr (\url{http://flickr.com}).
+%\section*{Acknowledgments}
+%Andrew R. Deans and Istv\'an Mik\'o wrote the text.
 \FloatBarrier
 % adding bibliography here
-\bibliographystyle{apalike}
+\bibliographystyle{myplainnat}
 \bibliography{bib}
+\clearpage
+
+\section*{Appendix. Portions of the International Code of Zoological Nomenclature}
+The following text was copied from the ICZN online edition (\url{http://www.iczn.org/code}). It has been simplified for the exercises in this handout. Not all articles are included.\\
+
+\noindent{}\textbf{Article 3. Starting point.} The date 1 January 1758 is arbitrarily fixed in this Code as the date of the starting point of zoological nomenclature.\\
+
+\noindent{}\textbf{Article 5. Principle of Binominal Nomenclature.}\\
+\noindent{}\textbf{5.1. Names of species.} The scientific name of a species, and not of a taxon of any other rank, is a combination of two names (a binomen), the first being the generic name and the second being the specific name. The generic name must begin with an upper-case letter and the specific name must begin with a lower-case letter.\\
+
+\noindent{}\textbf{Article 8. What constitutes published work.} A work is to be regarded as published for the purposes of zoological nomenclature if it complies with the requirements of this Article and is not excluded by the provisions of Article 9.\\
+\noindent{}\textbf{8.1. Criteria to be met.} A work must satisfy the following criteria:\\
+\noindent{}\textbf{8.1.1.} it must be issued for the purpose of providing a public and permanent scientific record,\\
+\noindent{}\textbf{8.1.2.} it must be obtainable, when first issued, free of charge or by purchase, and\\
+\noindent{}\textbf{8.1.3.} it must have been produced in an edition containing simultaneously obtainable copies by a method that assures\\
+\noindent{}\textbf{8.1.3.1.} numerous identical and durable copies, or\\
+\noindent{}\textbf{8.1.3.2.} widely accessible electronic copies with fixed content and layout.\\
+
+\noindent{}\textbf{Article 9. What does not constitute published work.} Notwithstanding the provisions of Article 8, none of the following constitutes published work within the meaning of the Code:
+
+\noindent{}\textbf{9.1.} after 1930 handwriting reproduced in facsimile by any process;\\
+\noindent{}\textbf{9.2.} after 1985, works produced by hectographing or mimeographing;\\
+\noindent{}\textbf{9.3.} before 1986 and after 2012, works issued on optical discs;\\
+\noindent{}\textbf{9.4.} photographs as such;\\
+\noindent{}\textbf{9.5.} proof sheets;\\
+\noindent{}\textbf{9.6.} microfilms;\\
+\noindent{}\textbf{9.7.} acoustic records made by any method;\\
+\noindent{}\textbf{9.8.} labels of specimens;\\
+\noindent{}\textbf{9.9.} preliminary versions of works accessible electronically in advance of publication (see Article 21.8.3);\\
+\noindent{}\textbf{9.10.} materials issued primarily to participants at meetings (e.g. symposia, colloquia, congresses, or workshops), including abstracts and texts of presentations or posters;\\
+\noindent{}\textbf{9.11.} text or illustrations distributed by means of electronic signals (\textit{e.g.} via the Internet), except those fulfilling the requirements of Articles 8.1 and 8.5.\\
+\noindent{}\textbf{9.12.} facsimiles or reproductions obtained on demand of an unpublished work [Art. 8], even if previously deposited in a library or other archive.\\
+
+\noindent{}\textbf{Article 11. Requirements [for the availability of a name].} To be available, a name or, where relevant, a nomenclatural act must satisfy the following provisions:\\
+\noindent{}\textbf{11.1. Publication.} The name or nomenclatural act must have been published, in the meaning of Article 8, after 1757.\\
+\noindent{}\textbf{11.2. Mandatory use of Latin alphabet.} A scientific name must, when first published, have been spelled only in the 26 letters of the Latin alphabet (taken to include the letters j, k, w and y); the presence in a name when first published of diacritic and other marks, apostrophes or ligatures, or a hyphen, or a numeral in a compound species-group name, does not render the name unavailable (for corrections, see Articles 27 and 32.5.2).\\
+\noindent{}\textbf{11.3. Derivation.} Providing it meets the requirements of this Chapter, a name may be a word in or derived from Latin, Greek or any other language (even one with no alphabet), or be formed from such a word. It may be an arbitrary combination of letters providing this is formed to be used as a word.\\
+
+\noindent{}\textbf{Article 14. Anonymous authorship of names and nomenclatural acts.} A new name or nomenclatural act published after 1950 with anonymous authorship is not thereby made available.\\
+
+\noindent{}\textbf{Article 18. Inappropriate and tautonymous names.} The availability of a name is not affected by inappropriateness or tautonymy.\\
+
+\noindent{}\textbf{Article 23. Principle of Priority.}\\
+\noindent{}\textbf{23.1. Statement of the Principle of Priority.} The valid name of a taxon is the oldest available name applied to it, unless that name has been invalidated or another name is given precedence by any provision of the Code or by any ruling of the Commission. For this reason priority applies to the validity of synonyms, to the relative precedence of homonyms, the correctness or otherwise of spellings, and to the validity of nomenclatural acts (such as acts taken under the Principle of the First Reviser and the fixation of name-bearing types).\\
+
+\noindent{}\textbf{Article 61. Principle of Typification.}\\
+\noindent{}\textbf{61.1. Statement of the Principle of Typification.} Each nominal taxon in the family, genus or species groups has actually or potentially a name-bearing type. The fixation of the name-bearing type of a nominal taxon provides the objective standard of reference for the application of the name it bears.
 \end{document}
