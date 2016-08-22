@@ -10,6 +10,8 @@
 \usepackage[table,xcdraw]{xcolor}
 \usepackage{natbib}
 \usepackage{epigrafica}%changes default font to epigrafica
+\usepackage{longtable}%for table with dates
+\newcolumntype{M}[1]{>{\arraybackslash}m{#1}}%for table with dates
 
 \newcommand*{\doi}[1]{\href{http://dx.doi.org/#1}{doi: #1}}% links DOI
 
@@ -97,7 +99,7 @@ Department of Entomology, Pennsylvania State University\end{center}
 \setlength{\unitlength}{1in}
 \renewcommand{\arraystretch}{2}
 
-This course is designed to teach students about insect taxonomy, evolutionary relationships, collection and preservation techniques, morphology, and natural history. We'll focus mostly on adult forms and emphasize insects found in Pennsylvania. In the lab, students will learn how to handle specimens, use diagnostic keys, and identify insects by sight. Collection techniques will be honed during field trips. 
+This course is designed to teach students about insect taxonomy, evolutionary relationships, collection and preservation techniques, morphology, and natural history. We'll focus mostly on adult forms and emphasize insects found in Pennsylvania. In the lab, students will learn how to handle specimens, use diagnostic keys, and identify insects by sight. Collection techniques will be honed during field trips.
 
 \section*{Learning Outcomes} 
 Upon completion of this course students should be able to:
@@ -120,7 +122,7 @@ Upon completion of this course students should be able to:
 \end{itemize}
 
 \section*{Logistics} 
-\paragraph{Office Hours:} By appointment.
+\paragraph{Office Hours:} Wednesdays, 1:30--4:30pm, in 131 Headhouse III.
 
 \paragraph{Course Website:} \url{http://deanslab.org/ent432/} Note that source files for teaching materials are available through our GitHub repo - \url{https://github.com/OpenEntomology/InsectBiodiversityEvolution} - which also provides a mechanism for submitting issues:\\ \url{https://github.com/OpenEntomology/InsectBiodiversityEvolution/issues} 
 
@@ -140,11 +142,11 @@ The course content is partitioned across 15 units, each of which has its own (mo
 \item Paleoptera, Plecoptera, origin of wings
 \item Polyneoptera
 \item Acercaria
-\item Holometabolous development, Hymenoptera
-\item Neuropterida
+\item Holometabolous development, Hymenoptera 
+\item Neuropterida 
 \item Coleoptera, Strepsiptera
 \item Antliophora
-\item Amphiesmenoptera
+\item Amphiesmenoptera  \textbf{[lab practical 3]}
 \item Natural History Collections
 \end{enumerate}
 
@@ -179,6 +181,60 @@ A lack of knowledge or understanding of the University's Academic Integrity poli
 \paragraph{Disability Access Statement:} Penn State welcomes students with disabilities into the University's educational programs. Every Penn State campus has an office for students with disabilities. The Office for Disability Services (ODS) Web site provides contact information for every Penn State campus: \url{http://equity.psu.edu/ods/dcl}. For further information, please visit the Office for Disability Services Web site: \url{http://equity.psu.edu/ods}. 
 
 In order to receive consideration for reasonable accommodations, you must contact the appropriate disability services office at the campus where you are officially enrolled, participate in an intake interview, and provide documentation: \url{http://equity.psu.edu/ods/guidelines}. If the documentation supports your request for reasonable accommodations, your campus disability services office will provide you with an accommodation letter. Please share this letter with your instructors and discuss the accommodations with them as early in your courses as possible. You must follow this process for every semester that you request accommodations.
+\clearpage
+
+\begin{center}
+\renewcommand{\arraystretch}{1.5}
+\begin{longtable}{|M{2cm}|M{5.5cm}|M{5cm}|M{2cm}|}
+\caption*{Tentative dates for activities and exercises:}\\
+\hline
+\textbf{Date} & \textbf{Lecture} & \textbf{Lab} & \textbf{Handout/ reading} \\
+\hline
+\endfirsthead
+\multicolumn{4}{c}%
+{\tablename\ \thetable\ -- \textit{Continued from previous page}} \\
+\hline
+\textbf{Date} & \textbf{Lecture} & \textbf{Lab} & \textbf{Handout/ reading} \\
+\hline
+\endhead
+ \multicolumn{4}{r}{\textit{Continued on next page}} \\
+\endfoot
+\hline
+\endlastfoot
+8/23 (T) & Introduction to the course & Walk to Arboretum to discover your inner Darwin & syllabus, collection, oath, Unit 1 \\ \hline
+8/25 (Th) & History of insect classification & Begin insect morphology & Unit 2 \\ \hline
+8/30 (T) & \multicolumn{2}{c|}{Finish insect morphology (meet in 131 Headhouse III)} & Unit 2 \\ \hline
+9/1 (Th) & Systematics history and data types & Wrap up morphology, begin systematics & Unit 3 \\ \hline
+\multicolumn{1}{|l|}{9/2 -- 9/5} & \multicolumn{3}{l|}{Field trip, Powdermill Nature Reserve} \\ \hline
+9/6 (T) & Phylogenetics & Finish systematics & Unit 3 \\ \hline
+9/8 (Th) & Fossils, early arthropods, terrestrialization & Fossils, begin non-insect arthropods & Units 4, 5 \\ \hline
+9/13 (T) & Non-insect arthropods & Non-insect arthropods & Unit 5 \\ \hline
+9/15 (Th) & Non-pterygote insects & Non-pterygote insects & Unit 6 \\ \hline
+9/20 (T) & Origin of wings, Paleoptera & Paleoptera, Plecoptera, \textbf{lab practical 1} & Unit 7 \\ \hline
+9/22 (Th) & Polyneoptera & Polyneoptera & Unit 8 \\ \hline
+9/27 (T) & \multicolumn{3}{c|}{Work on natural history narrative, collection; no class, but lab is open} \\ \hline
+9/29 (Th) & \multicolumn{3}{c|}{Work on natural history narrative, collection; no class, but lab is open} \\ \hline
+10/4 (T) & Polyneoptera & Polyneoptera & Unit 8 \\ \hline
+10/6 (Th) & Polyneoptera & Polyneoptera & Unit 8 \\ \hline
+10/11 (T) & Acercaria & Acercaria & Unit 9 \\ \hline
+10/13 (Th) & Acercaria & Acercaria & Unit 9 \\ \hline
+10/18 (T) & Acercaria, holometabolous development & Acercaria & Units 9, 10 \\ \hline
+10/20 (Th) & Hymenoptera & Hymenoptera & Unit 10 \\ \hline
+10/25 (T) & Hymenoptera & Hymenoptera & Unit 10 \\ \hline
+10/27 (Th) & Neuropterida & Neuropterida, \textbf{lab practical 2} & Unit 11 \\ \hline
+11/1 (T) & Coleoptera & Coleoptera & Unit 12 \\ \hline
+11/3 (Th) & Coleoptera & Coleoptera & Unit 12 \\ \hline
+11/8 (T) & Coleoptera, Strepsiptera & Coleoptera, Strepsiptera & Unit 12 \\ \hline
+11/10 (Th) & Antliophora & Antliophora & Unit 13 \\ \hline
+11/15 (T) & Antliophora & Antliophora & Unit 13 \\ \hline
+11/17 (Th) & Antliophora & Antliophora & Unit 13 \\ \hline
+11/21--11/25 & \multicolumn{3}{c|}{Thanksgiving break --- No classes} \\ \hline
+11/29 (T) & Amphiesmenoptera & Amphiesmenoptera & Unit 14 \\ \hline
+12/1 (Th) & Amphiesmenoptera & Amphiesmenoptera & Unit 14 \\ \hline
+12/6 (T) & Amphiesmenoptera & Amphiesmenoptera, \textbf{lab practical 3} & Unit 14 \\ \hline
+12/8 (Th) & Natural history collections, wrap-up, review &  & Unit 15 \\ 
+\end{longtable}
+\end{center}
 
 %\bibliographystyle{myplainnat}%%
 
