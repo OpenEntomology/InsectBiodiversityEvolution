@@ -12,8 +12,14 @@
 \usepackage[font=small,labelfont=bf]{caption}%for captions
 \usepackage{natbib}	%for bibliography
 \usepackage{placeins}%prevent images from floating into inappropriate sections
-\def\labelitemi{--}
+\newcommand*{\doi}[1]{\href{http://dx.doi.org/#1}{doi: #1}}% links DOI
+\usepackage{epigrafica}%changes default font to epigrafica
+\DeclareTextAccent{\"}{OT1}{168}%declare umlaut
+\DeclareTextAccent{\~}{OT1}{152}
+\usepackage[utf8]{inputenc}%for diacritic on n
 
+\newcommand{\latinword}[1]{\texttt{\itshape #1}}%use \latinword for vocab
+\def\labelitemi{--} %change bullet to em dash
 \pagestyle{fancy}
 \renewcommand{\headrulewidth}{0pt}
 
@@ -41,39 +47,35 @@ A major reason for incredible diversity of Arthropoda is their successful coloni
 \item specimens (provided)
 \item fine forceps, probes (provided)
 \item sorting tray, watch glasses, gloves, safety glasses, glycerol, ethanol (provided)
-\item pencil/paper for sketches
+\item pencil/lab notebook for sketches
 \end{itemize}
 
 \section*{Safety}
 We will be working with sharp tools. Wear your personal protective gear at all times. Specimens are to be returned to their vials after lab, and glycerine and ethanol will be collected for proper disposal or reuse.
 
 \section*{Methods}
-Working with a partner, organize your space, specimens, tools, and microscope. Use your probe and forceps to manipulate the specimen. In this lab, however, we will not be dissecting specimens (unless otherwise noted). You can start anywhere in the handout.
+Working with a partner, organize your space, specimens, tools, and microscope. Use your probe and forceps to manipulate the specimen. In this lab, however, we will not be dissecting specimens (unless otherwise noted). 
 
-\section*{Fossil arthropods}
-We discussed arthropod fossils in lecture, and you read papers about taphonomy, terrestrialization, and Earth's history. In the space below, remind yourself of biases we see in the fossil record.\\
+\section{Fossil arthropods}
+We discussed arthropod fossils in lecture, and you read papers about taphonomy, terrestrialization, and Earth's history. Our collection holds examples of three types of fossils that you can examine: 
 
-\noindent{}Our collection holds examples of three types of fossils: 
-
-\paragraph{Creede Formation (Oligocene, $\sim$27 Mya)} You will see several grayish, flat rocks that have compression fossils in them. These insects lived in and around a shallow, high altitude lake in what is now Creede, CO. The lake was repeatedly filled with volcanic ash, from eruptions and from runoff\footnote{See UC Berkeley Museum of Paleontology website for more info: \url{http://bit.ly/1NYbPhs}}.
+\paragraph{Creede Formation (Oligocene, $\sim$27 Mya)} You will see several grayish, flat rocks that have compression fossils in them. These insects lived in and around a shallow, high altitude lake in what is now Creede, CO. The lake was repeatedly filled with volcanic ash, from eruptions and from runoff \citep{berkeley}.
 
 \paragraph{Dominican amber (Middle Miocene, 15--20 Mya)} We have a small collection of amber with insect inclusions. These insects lived in what is now the Dominican Republic. This amber is the fossilized resin from a leguminous tree, \textit{Hymenaea protera} (Fabaceae), now extinct.
 
-\paragraph{Barstow Formation (Early to Middle Miocene, 19.3---13.4 Mya)} These fossils are quite small and are mounted on slides. These insects are presumed to have lived in a series of saline-alkaline lakes that was repeatedly subjected to volcanic disturbance. Eruptions repeatedly killed the lakes' fauna and covered the carcasses with ash and calcium carbonate. The subsequent chemistry allowed silica to replace the integument and for the preservation of soft tissues.\\
+\paragraph{Barstow Formation (Early to Middle Miocene, 19.3--13.4 Mya)} These fossils are quite small and are mounted on slides. These insects are presumed to have lived in a series of saline-alkaline lakes that was repeatedly subjected to volcanic disturbance. Eruptions repeatedly killed the lakes' fauna and covered the carcasses with ash and calcium carbonate. The subsequent chemistry allowed silica to replace the integument and for the preservation of soft tissues.\\
 
-\noindent{}Spend some time with specimens from each type of fossil. Are they biased towards some particular life history or body part? Sketch a couple specimens below or on the back of this handout and label the parts. Which fossils offer the most information and why?\\
+\hangindent2em\textbf{Question 4-1:} Spend some time with specimens from each type of fossil. Are they biased towards some particular life history or body part? Sketch a couple specimens in your lab notebook and label the parts. Which fossils offer the most information and why?\\
 
-\section*{Concepts}
-Could you write a couple sentences that explain each term? Can you provide examples?
+\section*{Test yourself}
+Before moving on to the next unit make sure you're comfortable with the following concepts. Could you write a couple sentences that explain each term? Can you provide examples?
 
 \begin{enumerate} 
 \item{Lagerst{\"a}tte} 
 \item{taphonomy}  
-\item{Onychophora}  
 \item {stem \textit{vs}. crown group}
 \end{enumerate}
 
-\section*{Bigger picture}
 \noindent{}Can you describe three types of fossils and how they occur? (We discussed five.) What factors influence preservation, and what environmental conditions result in well-preserved fossils? \citep[Hint: see][]{taphonomy2004}\\
 
 \noindent{Given what we know about insect bodies and biology, what biases would you expect to see in the fossil record and why?}\\
@@ -86,12 +88,12 @@ Could you write a couple sentences that explain each term? Can you provide examp
 
 \noindent{What characteristics of the arthropod \textit{Bauplan} allowed these organisms to move into terrestrial environments? When and how many times (minimally) did this happen?\\
 
-\noindent{}Can you draw a phylogeny showing the relationships between Onychophora, Chelicerata, Myriapoda, and Pancrustacea (including Hexapoda)? Which node is the common ancestor of Arthropoda? \citep[Hint: see][]{Dunlop2013}}
+\section*{Epilogue}
+This handout is part of an open curriculum. Original files are available free for anyone to download, copy, modify, and improve at the Open Entomology GitHub repository \citep{ENT432}, which also provides a mechanism for reporting problems and other feedback:\\
+\url{https://github.com/OpenEntomology/InsectBiodiversityEvolution/issues}
 
-\section*{Acknowledgments}
-Andrew R. Deans and Istv\'an Mik\'o wrote the text. Many of the illustrations were generously made available by the Biodiversity Heritage Library (\url{http://biodiversitylibrary.org}) and the photographers at Flickr (\url{http://flickr.com}).
 \FloatBarrier
 % adding bibliography here
-\bibliographystyle{apalike}
+\bibliographystyle{myplainnat}
 \bibliography{bib}
 \end{document}
