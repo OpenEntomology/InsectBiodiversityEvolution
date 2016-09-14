@@ -6,13 +6,18 @@
 \usepackage{float}%force tables/figs into certain placement
 \usepackage{changepage}%for dichotomous key
 \usepackage{graphicx}%for figures
-\usepackage{caption}%for figures
+\usepackage{natbib}	%for bibliography
 \usepackage{subcaption}%for figures
 \usepackage{hyperref}%for hyperlinks
 \usepackage{multicol}% for making list span multiple columns
 \usepackage[font=small,labelfont=bf]{caption}%for captions
 \renewcommand{\headrulewidth}{0pt}
-\def\labelitemi{--}
+\newcommand*{\doi}[1]{\href{http://dx.doi.org/#1}{doi: #1}}% links DOI
+\usepackage{epigrafica}%changes default font to epigrafica
+\DeclareTextAccent{\"}{OT1}{168}%declare umlaut
+\usepackage{placeins}%prevent images from floating into inappropriate sections
+\newcommand{\latinword}[1]{\texttt{\itshape #1}}%use \latinword for vocab
+\def\labelitemi{--} %change bullet to em dash
 \pagestyle{fancy}
 
 \lhead{}
@@ -23,74 +28,47 @@
 \rfoot{\thepage}
 \renewcommand{\footrulewidth}{0.4pt}
 \title{Unit 5 - Non-hexapod Arthropoda}
-\author{Andrew R. Deans and Istv\'an Mik\'o}
+\author{Open Entomology Project}
 \begin{document}
 \cleanlookdateon %removed ordinal date
 \maketitle
 \thispagestyle{fancy}
-\section{Lecture}
-In this unit we learn about major non-hexapod arthropod lineages---\textbf{Chelicerata} (spiders, mites, scorpions, and their relatives), \textbf{Myriapoda} (centipedes, millipedes, and their relatives), and some non-hexapod \textbf{Pancrustacea} (pillbugs, brine shrimp, and their relatives---including our collective understanding of their natural histories and hypotheses of their evolutionary history relative to other arthropods.
+\section*{Introduction}
+In this unit we learn about major non-hexapod arthropod lineages---\textbf{Chelicerata} (spiders, mites, scorpions, and their relatives), \textbf{Myriapoda} (centipedes, millipedes, and their relatives), and some non-hexapod \textbf{Pancrustacea} (pillbugs, brine shrimp, and their relatives---including our collective understanding of their natural histories and hypotheses of their evolutionary history relative to other arthropods. We'll also look at the putative sister to Arthropoda: \textbf{Onychophora} (velvet worms).
 
-\subsection*{Taxa to know}
-Familiarize yourself with the following taxon names, which refer to organisms you are likely to encounter in the northeastern USA. Can you describe how these arthropods live (natural history) and roughly how diverse they are? Do you know how they're related to one another? Could you identify one by sight?
+You should have a relatively firm grasp of arthropod anatomy at this point. Before we start revisit our discussion of the phenotypes that make an organism an arthropod. Now consider their diversity relative to other metazoans: vertebrates, annelids, nematodes, \textit{etc}. What phenotypes would you consider ``key innovations'' for Arthropoda? Why is Arthropoda orders of magnitude more diverse than its sister lineage?
 
-\begin{multicols}{2}
-\begin{enumerate} 
-\item{Acari}
-\item{Amphipoda}
-\item{Arachnida}  
-\item{Araneae}  
-\item{Chelicerata} 
-\item{Chilopoda}
-\item{Diplopoda}
-\item{Isopoda}  
-\item{Myriapoda}
-\item{Onychophora} 
-\item{Opiliones}  
-\item{Pancrustacea} 
-\item{Pseudoscorpiones} 
-\item{Scorpiones}
-\item{Xenocarida (no specimens)}  
-\end{enumerate}
-\end{multicols}
+As you examine the specimens in the hands-on portion of this unit think about how the phenotypes you observe inform us of the evolutionary history of these organisms.
 
-\subsection*{Big picture questions}
-\noindent{}We covered more taxa than those in the list above. Was there one that stood out to you as especially compelling? Can you spell it correctly and describe its relevance to our understanding of evolution, behavior, and morphology?\\
-
-\noindent{}What was the first terrestrial arthropod? How do we know it was terrestrial?\\ 
-
-\noindent{}Revisit our discussion of the phenotypes that make an organism an arthropod. Now consider their diversity relative to other metazoans: vertebrates, annelids, nematodes, \textit{etc}. What phenotypes would you consider ``key innovations''? Why is Arthropoda orders of magnitude more diverse than its sister lineage?\\
-
-\section{Lab}
-
-\subsection*{Introduction}
-You should have a relatively firm grasp of arthropod anatomy at this point. It's time to start looking at specimens in the contexts of taxonomy and evolution. In this lab we will examine a few fossils, to get a sense of how much (or how little) information they provide. We will also look at specimens of velvet worms (Onychophora), the putative sister to Arthropoda, and non-insect arthropods. Based on your observations of their morphologies, how are insects related to these other arthropods? After this lab do you think you could recognize any of these taxa in the wild? We will focus primarily on arthropods you can find in Pennsylvania. 
-
-\subsection*{Materials}
+\section*{Materials}
 \begin{itemize}
 \item specimens (provided)
 \item fine forceps, probes (provided)
 \item sorting tray, watch glasses, gloves, safety glasses, glycerol, ethanol (provided)
-\item pencil/paper for sketches
+\item pencil/lab notebook for sketches
 \end{itemize}
 
-\subsection*{Safety}
+\section*{Safety}
 We will be working with sharp tools. Wear your personal protective gear at all times. Specimens are to be returned to their vials after lab, and glycerine and ethanol will be collected for proper disposal or reuse.
 
-\subsection*{Methods}
+\section*{Methods}
 Working with a partner, organize your space, specimens, tools, and microscope. Use your probe and forceps to manipulate the specimen. In this lab, however, we will not be dissecting specimens (unless otherwise noted). You can start anywhere in the handout.
 
-\subsection{Onychophora (velvet worms)}
-These organisms are thought to be sister to Arthropoda. Can you see any shared, derived characters (Figure \ref{fig:onych}) between onychophorans and arthropods? What features indicate that these creatures are definitely \textit{not} Arthropoda (\textit{i.e.}, how would you write the diagnosis)? \vspace{3cm}
+\section{Onychophora (velvet worms)}
+\noindent{}\textit{Diagnostic characters:} Segmented and relatively soft-bodied, with a single pair of antennae and serially homologous legs. Spiracles and tracheae present.\\
+
+\noindent{}\textit{Natural history:} Velvet worms are predators of other invertebrates, usually subduing prey with a glue-like mucous that is excreted with force from glands near the mouth. They are quite susceptible to desiccation and so are usually found in humid habitats. There are approximately 200 species, which can found throughout the Neotropics and in pockets throughout the rest of the world. There is a rich fossil record from marine environments, but there are no extant marine species.\\
+
+\hangindent2em\textbf{Question 5-1:} Can you see any shared, derived characters (Figure \ref{fig:onych}) between onychophorans and arthropods? What features indicate that these creatures are definitely \textit{not} Arthropoda (\textit{i.e.}, how would you write the diagnosis)? 
 
 \begin{figure}[ht!]
   \centering
-    \includegraphics[width=0.8\textwidth]{onych}
+    \includegraphics[width=0.9\textwidth]{onych}
   \caption{Photo (CC BY-NC-SA 2.0) by Yonatan Monk: \url{https://flic.kr/p/85z27d}}.
   \label{fig:onych}
 \end{figure}
 
-\subsection{Chelicerata}
+\section{Chelicerata}
 These arthropods generally share the following characters: 
 \begin{itemize}
 \item antennae absent (though anteriormost pair of legs often antenniform)
@@ -99,16 +77,12 @@ These arthropods generally share the following characters:
 \end{itemize}
 The most diverse group of chelicerates is Arachnida, which includes all the terrestrial species of Chelicerata. We will examine specimens of the taxa listed below. Can you see the diagnostic characters clearly? If you saw any of these specimens in a lab practical could you name it (with correct spelling), describe a diagnostic feature, and/or describe its natural history?
 
-\subsubsection*{Araneae (spiders)}
-\begin{itemize}
-\item chelicerae fang-like (Figure \ref{fig:fang})
-\item anteriormost pair of legs not antenniform
-\item pedipalps not chelate (\textit{i.e.}, pincer/claw-shaped), rarely stouter than legs
-\item opisthosoma not obviously segmented (except rarely)
-\item opisthosoma attached to prosoma via narrow constriction (Figure \ref{fig:spider})
-\item spinnerets present posteroventrally on opisthosoma, but no tail-like structure (telson)
-\end{itemize}
-Why do spiders have a constricted ``waist''? What are fang-like chelicerae adapted for? Can you predict how they're used?\vspace{3cm}
+\subsection{Araneae (spiders)}
+\noindent{}\textit{Diagnostic characters:} Chelicerae fang-like (Figure \ref{fig:fang}); anteriormost pair of legs not antenniform; pedipalps not chelate (\textit{i.e.}, pincer/claw-shaped), rarely stouter than legs; opisthosoma not obviously segmented (except rarely); opisthosoma attached to prosoma via narrow constriction (Figure \ref{fig:spider}); spinnerets present posteroventrally on opisthosoma, but no tail-like structure (telson).\\
+
+\noindent{}\textit{Natural History:} Incredibly diverse taxon, with more than 45,000 described species found worldwide and in almost every habitat. These arthropods are well known for their use of silk to form webs, tunnels, ``parachutes'', and other contraptions.\\
+
+\hangindent2em\textbf{Question 5-2:} Why do spiders have a constricted ``waist''? What are fang-like chelicerae adapted for? Can you predict how they're used?
 
 \begin{figure}[ht!]
     \centering
@@ -127,16 +101,12 @@ Why do spiders have a constricted ``waist''? What are fang-like chelicerae adapt
     \caption{Spiders (Araneae)}\label{fig:spiders}
 \end{figure}
 
-\subsubsection*{Acari (mites, ticks)}
-\begin{itemize}
-\item opisthosoma not segmented (See Figure \ref{fig:mites})
-\item opisthosoma broadly joined to prosoma, no tail-like structure (telson)
-\item young instars with 3 pairs of legs, adults with 4
-\item pedipalps not chelate, not thicker than legs
-\item mouthparts usually project anteriorly, chelicerae not chelate
-\item usually very small (0.08--10 mm body length)
-\end{itemize}
-The apparent lack of segmentation is a diagnostic character. Can you see any evidence that these arthropods have segments? Based on their body shape and size, and especially their mouthpart morphology, can you make predictions or generalizations about their natural history?\vspace{5cm}
+\subsection{Acari (mites, ticks)}
+\noindent{}\textit{Diagnostic characters:} Opisthosoma not segmented (See Figure \ref{fig:mites}); opisthosoma broadly joined to prosoma, no tail-like structure (telson); young instars with 3 pairs of legs, adults with 4; pedipalps not chelate, not thicker than legs; mouthparts usually project anteriorly, chelicerae not chelate; usually very small (0.08--10 mm body length).\\
+
+\noindent{}\textit{Natural History:} Another incredibly diverse taxon, with more than 48,000 described species found worldwide. It is difficult to generalize their natural history, as there are species that feed as predators, herbivores, detritivores, fungivores, and parasites, and they live in just about every habitat imaginable.  \\
+
+\hangindent2em\textbf{Question 5-3:} Based on their mouthpart morphology can you make \textit{any} generalization or predictions about their feeding habits?\\
 
 \begin{figure}[ht!]
     \centering
@@ -155,13 +125,10 @@ The apparent lack of segmentation is a diagnostic character. Can you see any evi
     \caption{Mites (Acari).} \label{fig:mites}
 \end{figure}
 
-\subsubsection*{Opiliones (harvestmen, daddy-longlegs)}
-\begin{itemize}
-\item chelicerae chelate
-\item opisthosoma segmented, broadly joined to prosoma, without tail-like structure (telson) (Figures \ref{fig:opiliones1}--\ref{fig:opiliones2})
-\item body ovoid; body  \textless7 mm long usually, with leg span up to 160 mm
-\item pedipalp morphology variable: usually thinner than legs, sometimes raptorial 
-\end{itemize}
+\subsection{Opiliones (harvestmen, daddy-longlegs)}
+\noindent{}\textit{Diagnostic characters:} Chelicerae chelate; opisthosoma segmented, broadly joined to prosoma, without tail-like structure (telson) (Figures \ref{fig:opiliones1}--\ref{fig:opiliones2}); body ovoid; body  \textless7 mm long usually, with leg span up to 160 mm; pedipalp morphology variable: usually thinner than legs, sometimes raptorial.\\
+
+\noindent{}\textit{Natural history:} Most species are predators and/or scavengers, feeding with a compound structure (stomotheca), formed, in part, by the proximal pedipalp and anteriormost leg segments. These arachnids lack venom and silk glands but do produce noxious defensive odors through scent gland openings (ozopores). There are more than 6,500 species worldwide. \\
 
 \begin{figure}[ht!]
   \centering
@@ -176,17 +143,13 @@ The apparent lack of segmentation is a diagnostic character. Can you see any evi
   \caption{Opiliones. Photo (CC BY 2.0) by Thomas Bresson: \url{https://flic.kr/p/6ytEzH}}
   \label{fig:opiliones2}
 \end{figure}
-\noindent{}Like all arachnids, Opiliones do not have antennae. Can you find an appendage that serves a similar function? Given the variation in pedipalp morphology across Opiliones, what would you predict is the function of these appendages?\vspace{3cm}
+\hangindent2em\textbf{Question 5-4:} Like all arachnids, Opiliones do not have antennae. Can you find an appendage that serves a similar function? Given the variation in pedipalp morphology across Opiliones, what would you predict is the function of these appendages?
 
-\subsubsection*{Scorpiones (scorpions)}
-\begin{itemize}
-\item chelicerae chelate
-\item pedipalps long, chelate, and usually at least as thick as legs (Figure \ref{fig:scorpion})
-\item anteriormost pair of legs used for walking (\textit{i.e.}, not antenniform)
-\item opisthosoma segmented, broadly joined to prosoma; tail-like posteriorly (tail = telson)
-\item telson with venom gland and sting present
-\item 2nd segment of opisthosoma with comblike organs (pectines) ventrally 
-\end{itemize}
+\FloatBarrier
+\subsection{Scorpiones (scorpions)}
+\noindent{}\textit{Diagnostic characters:} Chelicerae chelate; pedipalps long, chelate, and usually at least as thick as legs (Figure \ref{fig:scorpion}); anteriormost pair of legs used for walking (\textit{i.e.}, not antenniform); opisthosoma segmented, broadly joined to prosoma; tail-like posteriorly (tail = telson); telson with venom gland and sting present; 2nd segment of opisthosoma with comblike organs (pectines) ventrally.\\
+
+\noindent{}\textit{Natural history:} There are more than 1,700 species found worldwide, all of which are predators.\\
 
 \begin{figure}[ht!]
   \centering
@@ -194,16 +157,12 @@ The apparent lack of segmentation is a diagnostic character. Can you see any evi
   \caption{Scorpiones. Photo (CC BY 2.0) by Clinton \& Charles Robertson: \url{https://flic.kr/p/t52BX}}
   \label{fig:scorpion}
 \end{figure}
-\noindent{}Some scorpion species have massive pedipalps and relatively small telsons, while others exhibit the opposite set of phenotypes (\textit{i.e.}, massive telsons but small pedipalps); from a natural history perspective what do you think is happening with these structures? Also, how do you think scorpions find prey?\vspace{5cm}
+\hangindent2em\textbf{Question 5-5:} Some scorpion species have massive pedipalps and relatively small telsons, while others exhibit the opposite set of phenotypes (\textit{i.e.}, massive telsons but small pedipalps); from a natural history perspective what do you think is happening with these structures? Also, how do you think scorpions find prey?\vspace{5cm}
 
-\subsubsection*{Pseudoscorpiones (pseudoscorpions)}
-\begin{itemize}
-\item chelicerae chelate
-\item pedipalps long, chelate, and thicker than legs (Figure \ref{fig:pseudo})
-\item anteriormost pair of legs used for walking (\textit{i.e.}, not antenniform)
-\item opisthosoma segmented, broadly joined to prosoma, without telson
-\item patellar segment absent on legs
-\end{itemize}
+\subsection{Pseudoscorpiones (pseudoscorpions)}
+\noindent{}\textit{Diagnostic characters:} Chelicerae chelate; pedipalps long, chelate, and thicker than legs (Figure \ref{fig:pseudo}); anteriormost pair of legs used for walking (\textit{i.e.}, not antenniform); opisthosoma segmented, broadly joined to prosoma, without telson; patellar segment absent on legs.\\
+
+\noindent{}\textit{Natural history:} There are 3,300 species of pseudoscorpion, most of which are relatively small (\textless5 mm long). Sometimes they can be found clinging to insects, hitching a ride (phoresy) or possibly eating parasitic mites. Some species subdue prey with venom, from a gland in the pedipalp.\\
 
 \begin{figure}[ht!]
   \centering
@@ -211,24 +170,18 @@ The apparent lack of segmentation is a diagnostic character. Can you see any evi
   \caption{Pseudoscorpionida. Photo (CC BY-SA 2.0) by Gilles San Martin: \url{https://flic.kr/p/5Nxymf}}
   \label{fig:pseudo}
 \end{figure}
-\noindent{}Compared to the other arachnids we've seen, would you describe Pseudoscorpiones as being highly adapted for prey capture? What would you predict these arthropods eat?\vspace{2cm}
 
-\noindent{}Did you see all the phenotypes listed above in the specimens we have? Which characters seem to be evolutionarily significant and why? \vspace{5cm}
-
-\subsection{Myriapoda}
+\section{Myriapoda}
 \begin{itemize}
 \item antennae present as single pair
 \item appendages uniramous (\textit{i.e.}, no branches)
 \item mouthparts mandibulate (\textit{i.e.}, not chelicerate)
 \end{itemize}
 
-\subsubsection*{Diplopoda (millipedes)}
-\begin{itemize}
-\item most (apparent) segments with 2 pairs of legs (Figure \ref{fig:diplop2})
-\item antennae usually 7-segmented, short
-\item 30+ pairs of legs present usually
-\item body usually round, tube-like; some species small, bristly (Figure \ref{fig:diplop1})
-\end{itemize}
+\subsection{Diplopoda (millipedes)}
+\noindent{}\textit{Diagnostic characters:} Most (apparent) segments with 2 pairs of legs (Figure \ref{fig:diplop2}); antennae usually 7-segmented, short; 30+ pairs of legs present usually; body usually round, tube-like; some species small, bristly (Figure \ref{fig:diplop1}).\\
+
+\noindent{}\textit{Natural history:} Millipedes typically forage on rotting materials (saprophagy) and are important recyclers of nutritive material. Most species are harmless, although some are renown for excreting toxic compounds when handled. There are \textgreater12,000 species described worldwide.\\
 
 \begin{figure}[ht!]
     \centering
@@ -247,13 +200,10 @@ The apparent lack of segmentation is a diagnostic character. Can you see any evi
     \caption{Millipedes (Diplopoda).} \label{fig:diplopoda}
 \end{figure}
 
-\subsubsection*{Chilopoda (centipedes)}
-\begin{itemize}
-\item antennae usually with 14+ segments
-\item apices of anteriormost pair of legs (forcipules) modified into fang-like structures (Figure \ref{fig:chilo2})
-\item most segments with 1 pair of legs; 15+ pairs of legs present usually (Figures \ref{fig:chilo1}--\ref{fig:chilo2})
-\item body usually dorsoventrally flattened (but see Figure \ref{fig:chilo1})
-\end{itemize}
+\subsection{Chilopoda (centipedes)}
+\noindent{}\textit{Diagnostic characters:} Antennae usually with 14+ segments; apices of anteriormost pair of legs (forcipules) modified into fang-like structures (Figure \ref{fig:chilo2}); most segments with 1 pair of legs; 15+ pairs of legs present usually (Figures \ref{fig:chilo1}--\ref{fig:chilo2}); body usually dorsoventrally flattened (but see Figure \ref{fig:chilo1}).\\
+
+\noindent{}\textit{Natural history:} \\
 
 \begin{figure}[ht!]
     \centering
@@ -271,19 +221,17 @@ The apparent lack of segmentation is a diagnostic character. Can you see any evi
 
 \noindent{}Based on your observations of the two myriapod taxa we have in lab, what would you say about their natural history? Where does each taxon typically live, and what does it eat?\vspace{4cm}
 
-\subsection{Non-hexapod Pancrustacea (formerly ``Crustacea'')}
+\section{Non-hexapod Pancrustacea (formerly ``Crustacea'')}
 \begin{itemize}
 \item often with 2 tagmata: cephalothorax and abdomen
 \item many biramous (2-branched) appendages, usually with 2nd pair of antennae (antennules)
 \item mouthparts mandibulate
 \end{itemize}
 
-\subsubsection*{Isopoda (pillbugs, sowbugs)}
-\begin{itemize}
-\item body with no carapace, usually dorso-ventrally flattened (Figures \ref{fig:isopod1}--\ref{fig:isopod2})
-\item 7 pairs of thoracic legs
-\item 2nd pair of antennae reduced
-\end{itemize}
+\subsection{Isopoda (pillbugs, sowbugs)}
+\noindent{}\textit{Diagnostic characters:} Body with no carapace, usually dorso-ventrally flattened (Figures \ref{fig:isopod1}--\ref{fig:isopod2}); 7 pairs of thoracic legs; 2nd pair of antennae reduced.\\
+
+\noindent{}\textit{Natural history:} One of the few non-hexapod pancrustaceans to radiate in the terrestrial environment. Of the approximately 10,000 known species, about half are terrestrial. The rest are marine (about 4,500 spp.) or inhabit freshwater. Most species survive as scavengers but many are parasitic on fish or other aquatic organisms.\\
 
 \begin{figure}[ht!]
     \centering
@@ -302,12 +250,10 @@ The apparent lack of segmentation is a diagnostic character. Can you see any evi
     \caption{Isopoda} \label{fig:isopoda}
 \end{figure}
 
-\subsubsection*{Amphipoda (scuds)}
-\begin{itemize}
-\item no carapace, usually laterally flattened (Figure \ref{fig:amphip})
-\item fore legs often raptorial
-\item usually 6 or 7 pairs of thoracic legs
-\end{itemize}
+\subsection{Amphipoda (scuds)}
+\noindent{}\textit{Diagnostic characters:} No carapace, usually laterally flattened (Figure \ref{fig:amphip}); fore legs often raptorial; usually 6 or 7 pairs of thoracic legs.\\
+
+\noindent{}\textit{Natural history:} Of the 9,500 known species, approximately 20\% are found in freshwater. The vast majority are marine, but a handful are terrestrial (usually closely associated with aquatic habitats). They are mostly scavengers.\\
 
 \begin{figure}[ht!]
   \centering
@@ -316,17 +262,17 @@ The apparent lack of segmentation is a diagnostic character. Can you see any evi
   \label{fig:amphip}
 \end{figure}
 
-\noindent{}Given your observations of these ``crustaceans'', why do we have so few terrestrial and fresh water species, relative to insects? \vspace{3cm}
+\noindent{}Given your observations of these ``crustaceans'', why do we have so few terrestrial and fresh water species, relative to insects? \\
 
 \subsection{Test your skills!}
 You've now seen a handful of arthropod taxa, from three groups that are not insects. While they are not the focus of this course, these organisms are incredibly diverse and remain relevant to understanding the evolution of Arthropoda. Take some time to observe specimens of taxa we are not covering, bask in the diversity of phenotypes, and see if you can classify them correctly. Are the chelicerates, myriapods, or pancrustaceans? Why or why not? Draw and/or describe features you think are diagnostic. Based on their morphology, can you predict their natural history?
 
 \subsubsection*{Solifugae (Solpugida; camelspiders, sunspiders, windscorpions)}
-What group does it belong in and why?\vspace{1cm}
+What group does it belong in and why?\\
 
-\noindent{}What diagnostic characters separate it from the taxa above?\vspace{1.5cm}
+\noindent{}What diagnostic characters separate it from the taxa above?\\
 
-\noindent{}What do these arthropods eat, and how do they live?\vspace{1.5cm}
+\noindent{}What do these arthropods eat, and how do they live?\\
 
 \begin{figure}[ht!]
   \centering
@@ -336,11 +282,11 @@ What group does it belong in and why?\vspace{1cm}
 \end{figure}
 
 \subsubsection*{Decapoda (crabs, lobsters, shrimp)}
-What group does it belong in and why?\vspace{1cm}
+What group does it belong in and why?\\
 
-\noindent{}What diagnostic characters separate it from the taxa above?\vspace{1.5cm}
+\noindent{}What diagnostic characters separate it from the taxa above?\\
 
-\noindent{}What do these arthropods eat, and how do they live?\vspace{1.5cm}
+\noindent{}What do these arthropods eat, and how do they live?\\
 
 \begin{figure}[ht!]
   \centering
@@ -350,11 +296,11 @@ What group does it belong in and why?\vspace{1cm}
 \end{figure}
 
 \subsubsection*{Thelyphonida (Uropygi, Uropygida, vinegaroons, whipscorpions)}
-What group does it belong in and why?\vspace{1cm}
+What group does it belong in and why?\\
 
-\noindent{}What diagnostic characters separate it from the taxa above?\vspace{1.5cm}
+\noindent{}What diagnostic characters separate it from the taxa above?\\
 
-\noindent{}What do these arthropods eat, and how do they live?\vspace{1.5cm}
+\noindent{}What do these arthropods eat, and how do they live?\\
 
 \begin{figure}[ht!]
   \centering
@@ -364,11 +310,11 @@ What group does it belong in and why?\vspace{1cm}
 \end{figure}
 
 \subsubsection*{Amblypygi (tail-less whipscorpions)}
-What group does it belong in and why?\vspace{1cm}
+What group does it belong in and why?\\
 
-\noindent{}What diagnostic characters separate it from the taxa above?\vspace{1.5cm}
+\noindent{}What diagnostic characters separate it from the taxa above?\\
 
-\noindent{}What do these arthropods eat, and how do they live?\vspace{1.5cm}
+\noindent{}What do these arthropods eat, and how do they live?\\
 
 \begin{figure}[ht!]
   \centering
@@ -378,11 +324,11 @@ What group does it belong in and why?\vspace{1cm}
 \end{figure}
 
 \subsubsection*{Xiphosura (horseshoe crabs)}
-What group does it belong in and why?\vspace{1cm}
+What group does it belong in and why?\\
 
-\noindent{}What diagnostic characters separate it from the taxa above?\vspace{1.5cm}
+\noindent{}What diagnostic characters separate it from the taxa above?\\
 
-\noindent{}What do these arthropods eat, and how do they live?\vspace{1.5cm}
+\noindent{}What do these arthropods eat, and how do they live?\\
 
 \begin{figure}[ht!]
   \centering
@@ -392,11 +338,11 @@ What group does it belong in and why?\vspace{1cm}
 \end{figure}
 
 \subsubsection*{Copepoda (copepods, fish lice)}
-What group does it belong in and why?\vspace{1cm}
+What group does it belong in and why?\\
 
-\noindent{}What diagnostic characters separate it from the taxa above?\vspace{1.5cm}
+\noindent{}What diagnostic characters separate it from the taxa above?\\
 
-\noindent{}What do these arthropods eat, and how do they live?\vspace{1.5cm}
+\noindent{}What do these arthropods eat, and how do they live?\\
 
 \begin{figure}[ht!]
   \centering
@@ -405,13 +351,12 @@ What group does it belong in and why?\vspace{1cm}
   \label{fig:copepod}
 \end{figure}
 
-
 \subsubsection*{Symphyla (symphylans)}
-What group does it belong in and why?\vspace{1cm}
+What group does it belong in and why?\\
 
-\noindent{}What diagnostic characters separate it from the taxa above?\vspace{1.5cm}
+\noindent{}What diagnostic characters separate it from the taxa above?\\
 
-\noindent{}What do these arthropods eat, and how do they live?\vspace{1.5cm}
+\noindent{}What do these arthropods eat, and how do they live?\\
 
 \begin{figure}[ht!]
   \centering
@@ -420,10 +365,20 @@ What group does it belong in and why?\vspace{1cm}
   \label{fig:symphyla}
 \end{figure}
 
-\begin{thebibliography}{9} %expand?
-\bibitem{terrest} Greb, S. F., W. A. DiMichele, and R. A. Gastaldo (2006) Evolution and importance of wetlands in earth history. Geological Society of America Special Papers, 399:1--40 DOI: 10.1130/2006.2399(01)
-\bibitem{review} Dunlop, J. A. (2010) Geological history and phylogeny of Chelicerata. Arthropod Structure \& Development, 39(2--3):124--142 DOI: 10.1016/j.asd.2010.01.003. Fossil Record and Phylogeny of the Arthropoda.
-\bibitem{syllabus} Miyazawa, H., C. Ueda, K. Yahata, and Z.-H. Su. (2010) Molecular phylogeny of Myriapoda provides insights into evolutionary patterns of the mode in post-embryonic development. \textit{Scientic Reports}, 4(4127):1--9 DOI: 10.1038/srep04127.
-\end{thebibliography}
+\noindent{}Can you draw a phylogeny showing the relationships between Onychophora, Chelicerata, Myriapoda, and Pancrustacea (including Hexapoda)? Which node is the common ancestor of Arthropoda? \citep[Hint: see][]{Dunlop2013}\\
+
+\section*{Epilogue}
+This handout is part of an open curriculum. Original files are available free for anyone to download, copy, modify, and improve at the Open Entomology GitHub repository \citep{ENT432}, which also provides a mechanism for reporting problems and other feedback:\\
+\url{https://github.com/OpenEntomology/InsectBiodiversityEvolution/issues}
+
+\section*{Acknowledgments}
+Images were borrowed from Wikimedia Commons, Flickr, and the Biodiversity Heritage Library. The authors made a good faith effort to adhere to the terms of their respective Creative Commons licenses and provide appropriate credit and links to source pages. All images were accessed 19 August 2016. We thank these artists for making their images available for educational purposes.
+
+
+\FloatBarrier
+% adding bibliography here
+\bibliographystyle{myplainnat}
+\bibliography{bib}
 
 \end{document}
+
