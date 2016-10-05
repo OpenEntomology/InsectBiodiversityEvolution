@@ -1,0 +1,119 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage{comment} % enables the use of multi-line comments (\ifx \fi) 
+%
+\usepackage[letterpaper,margin=0.75in]{geometry}
+\usepackage{fullpage} % changes the margin
+\usepackage{fancyhdr} % for footer
+\usepackage[UKenglish]{isodate}% http://ctan.org/pkg/isodate for date format
+\usepackage{epigrafica}%changes default font to epigrafica
+\usepackage{hyperref}%for URLs
+\usepackage[]{natbib}
+\newcommand*{\doi}[1]{\href{http://dx.doi.org/#1}{doi: #1}}% links DOI
+\newenvironment{labelfontsmall}{\fontfamily{phv}\selectfont}{\par}%for label font example
+\def\labelitemi{--}
+
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\newcommand{\latinword}[1]{\texttt{\itshape #1}}%
+
+\lhead{}
+\chead{}
+\rhead{}
+\lfoot{ENT 432 (Fall 2016) - Penn State}
+\cfoot{}
+\rfoot{\thepage}
+\renewcommand{\footrulewidth}{0.4pt}
+\title{Make your data accessible}
+\author{Open Entomology Project}
+
+\begin{document}
+\cleanlookdateon %removed ordinal date
+\maketitle
+\thispagestyle{fancy}
+\section*{Introduction}
+You've been collecting insects all semester, discovering your inner Darwin and sorting specimens from numerous localities. You've also made specimen preparations and labeled each one according to collection best practices. As part of this process you've also established a database of specimens in your collection: a spreadsheet with columns for locality, collector, identifier, \textit{etc}. Each student in the course likely developed the spreadsheet independently, with his/her own column headers. How can you make sure these data are available for research?\\
+
+\noindent{}Today we'll talk a bit about biodiversity data standards and tools and other resources that facilitate data sharing. We'll also refine your spreadsheets and use a tool that allows your data to be contributed to established biodiversity databases.
+
+\section*{Methods and materials}
+We'll be working at a computer for these exercises, but you can follow-up at home, on your own. Software and datasets required:
+\begin{itemize}
+\item Web browser (\textit{e.g.}, Firefox or Chrome)
+\item Text editor (TextWrangler for OSX or Notepad++ for Windows)
+\item Spreadsheet editor (\textit{e.g.}, Google Sheets, Microsoft Excel)
+\item Your data!
+\end{itemize}
+
+
+\section*{Glossary}
+We'll be using terms you may not be familiar with. Some of these concepts are provided below, and we'll go over them together. If you have a new one to add raise your hand!
+\begin{enumerate} 
+\item {Darwin Core}
+\item {GBIF}
+\item {metadata}
+\item{TDWG} 
+\item{XML}  
+\end{enumerate}
+
+\section*{Your data}
+Take a look at this label, which probably looks similar to the labels you've created for your specimens:\\
+
+\begin{labelfontsmall}
+\tiny
+\noindent{USA: PA: Centre County: \\ Pine Grove Mills, 40.730, \\ -77.884, $\pm$ 250m 15.iv.2016 \\ A.R. Deans, sifted litter}
+\end{labelfontsmall}
+\normalsize\vspace{5mm}
+
+\hangindent2em\textbf{Question A:} What kinds of data do you see represented? How many kinds are there? List them.\\
+
+\hangindent2em\textbf{Question B:} If you had these data from millions of specimens---all 35+ million insects in the Smithsonian Institution, for example---what kinds of hypotheses could you test? See if you can think of three example research questions.\\
+
+\hangindent2em\textbf{Question C:} Now look at your spreadsheet. How many columns do you have? Is each one a data type? How would you enter the label above into your spreadsheet? What data type(s) is/are in your spreadsheet but not represented in that label above? \\
+
+\hangindent2em\textbf{Question D:} Compare your spreadsheet to your neighbors' spreadsheets. How are they different?
+
+\section*{Biodiversity data in research}
+Biodiversity science is incredibly rich, with respect to the array of research questions and the data types that can be applied to them. We'll discuss a few examples of research that relies on collections data. As we talk, think about the minimum data required for these kinds of questions.
+
+\section*{Biodiversity data standards}
+Hopefully you thought of some compelling research questions for Question B. How can we aggregate data from hundreds (or thousands!) of natural history collections to test your hypotheses? Your spreadsheet almost definitely differed from your neighbors' databases, and you can imagine that a similar scenario exists in the natural history collections world. The Smithsonian would use a different approach than the American Museum of Natural History and the Field Museum. \\
+
+\noindent{}Fortunately there are established biodiversity data standards and tools that facilitate sharing. We'll look at those developed by TDWG, especially the Darwin Core and associated resources. Open a Web browser and navigate to \url{http://rs.tdwg.org/dwc/terms/index.htm}. This massive list almost definitely includes the data types you identified in Question A, along with dozens more that may or may not be relevant to your collection.\\
+
+\noindent{}Find the following terms and read their definitions: \latinword{catalogNumber}, \latinword{recordedBy}, \latinword{eventDate},\\ \latinword{samplingProtocol}, \latinword{fieldNotes}, \latinword{higherGeography} and \latinword{locality}, \latinword{decimalLatitude},\\ \latinword{decimalLongitude}, \latinword{coordinateUncertaintyInMeters}, \latinword{scientificName}. Do any of these sound familiar?\\
+
+\hangindent2em\textbf{Question D:} How many of your spreadsheet column headers are represented in the list above? Based on your reading of these (and maybe your eyes strayed to other terms), how would you change your spreadsheet organization? Or would you?\\
+
+\section*{Prepare your data!}
+GBIF provides a tool, the Darwin Core Archive Assistant \citep{DWCaGuide}, that will make each of your data sets (spreadsheets)---no matter how different---available more broadly for research. Now that you've thought about Darwin Core fields you're ready to get started:
+\begin{enumerate}
+\item Open a Web browser and navigate to \url{http://tools.gbif.org/dwca-assistant/}.
+\item Our data are primarily ``occurrences'' (which specimens occurred where), so check that box in the upper left, under ``Core''.
+\item On the upper right of the page you'll see a place to type the name of your spreadsheet file (``Filename:''); make sure it ends with .csv, as we'll be exporting your data as a \textbf{c}omma \textbf{s}eparated \textbf{v}alues file.
+\item When we selected ``occurrences'' the tool auto-populated our list with two required terms (fields), \latinword{ID} and \latinword{basisOfRecord}. Open a new tab in your browser and navigate back to \url{http://rs.tdwg.org/dwc/terms/index.htm}; find and read about \latinword{basisOfRecord}. We'll discuss \latinword{ID} as a group.
+\item Now go back to the Darwin Core Archive Assistant. Find the terms under Occurrences (far left) that match the columns in your spreadsheet. Check each one that applies.
+\item The terms should have been added to the area in the middle. Are they in the same order as your spreadsheet columns? Item ``0'' in the list of terms should match column ``A'' in your spreadsheet, item 1 to column B, \textit{etc}. Note that you can drag the terms up and down in that list. You can also insert a ``spacer'' for columns in your spreadsheet that do not match any Darwin Core terms. I recommend dragging \latinword{ID} to the bottom of your list.
+\item Once you have a list of terms that matches your spreadsheet headers it's time to validate! Navigate to the tab that reads ``meta.xml''. You should see an XML file that describes your database. Click ``Save File'' and export the file to your desktop. You should also export your spreadsheet as a CSV file. Put both of these files---the CSV and XML files---inside a folder. Now compress that folder into a .zip
+\item Go back to the ``meta.xml'' tab and click ``Validate''. This should launch the validator in a new browser tab. Find ``Upload local archive:'', choose your zipped folder and click ``Validate''. Did you get any warnings? Look at the rendering of your data at the bottom of the page. Do the columns line up? We'll discuss the results and any questions as a group.
+\end{enumerate}
+
+\section*{More thoughts on biodiversity data}
+Now that you have an idea of how to create a set of files that contribute to the greater scientific enterprise it's time to think about how to extend and enrich your data sets. We'll discuss some of these issues as a group.
+\begin{itemize}
+\item All of your specimens will be deposited at the Frost Entomological Museum. How do we specify that in your file?
+\item Do any of you have images or videos? How do we associate them with specimen records?
+\item How do we associate specimens, for example a parasitoid and its host? 
+\item How do we account for a range of dates, as we might see with a Malaise trap?
+\item How to explain our approach to georeferencing (\textit{i.e.}, finding a latitude and longitude for each specimen)? Do you know what geodetic datum means?
+\item Can biodiversity data be copyrighted?
+\end{itemize}\vspace{2cm}
+
+\section*{Epilogue}
+This handout is part of an open curriculum. Original files are available free for anyone to download, copy, modify, and improve at the Open Entomology GitHub repository \citep{ENT432}, which also provides a mechanism for reporting problems and other feedback:\\
+\url{https://github.com/OpenEntomology/InsectBiodiversityEvolution/issues}
+
+% adding bibliography here
+\bibliographystyle{myplainnat}
+\bibliography{bib}
+
+\end{document}
