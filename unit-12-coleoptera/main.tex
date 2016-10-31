@@ -1,0 +1,741 @@
+\documentclass[letterpaper, 11pt]{article}
+\usepackage{comment} % enables the use of multi-line comments (\ifx \fi) 
+\usepackage{fullpage} % changes the margin
+\usepackage{fancyhdr} % for footerhttps://www.overleaf.com/3039851kkndbp#
+\usepackage[UKenglish]{isodate}% http://ctan.org/pkg/isodate for date format
+\usepackage{float}%force tables/figs into certain placement
+\usepackage{changepage}%for dichotomous key
+\usepackage{graphicx}%for figures
+\usepackage{subcaption}%for figures
+\usepackage{hyperref}%for links
+\usepackage[font=small,labelfont=bf]{caption}%for captions
+\usepackage[letterpaper,margin=1in]{geometry}
+\usepackage{natbib}	%for bibliography
+\usepackage{placeins}%prevent images from floating into inappropriate sections
+\usepackage{MnSymbol,wasysym}%for smileys
+
+\newcommand*{\doi}[1]{\href{http://dx.doi.org/#1}{doi: #1}}% links DOI
+\usepackage{epigrafica}%changes default font to epigrafica
+\DeclareTextAccent{\"}{OT1}{168}%declare umlaut
+\usepackage{placeins}%prevent images from floating into inappropriate sections
+\newcommand{\latinword}[1]{\texttt{\itshape #1}}%use \latinword for vocab
+\def\labelitemi{--} %change bullet to em dash
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+
+\lhead{}
+\chead{}
+\rhead{}
+\lfoot{ENT 432 (Fall 2016) - Penn State}
+\cfoot{}
+\rfoot{\thepage}
+\renewcommand{\footrulewidth}{0.4pt}
+\title{Unit 12 - Coleoptera, Strepsiptera}
+\author{Open Entomology Project}
+
+\begin{document}
+\cleanlookdateon %removed ordinal date
+\maketitle
+\thispagestyle{fancy}
+\section*{Introduction}
+Beetles are among the most familiar of all insects, and they certainly are the most diverse order, with almost 400,000 described species and many times that remaining to be described. Given this level of diversity one might expect that there is an extraordinary range of life history strategies, sizes, phenotypes, impacts on humans, \textit{etc}. The most recognizable feature of beetles is their sclerotized fore wings (\textbf{elytra}), which typically cover the hind wing and much of the body. There are numerous other synapomorphies for \textbf{Coleoptera}, many of which are associated with the presence of elytra, and the lineage is robustly monophyletic. 
+
+The sister lineage to Coleoptera, \textbf{Strepsiptera} (twisted wing parasites), is much less well-known. These insects are parasites of other insects and usually exhibit life history strategies similar to those of some beetles (\textit{e.g.}, many Meloidae, Ripiphoridae).
+
+\section*{Materials}
+\begin{itemize}
+\item specimens (provided)
+\item fine forceps, probes (provided)
+\item sorting tray, watch glasses, gloves, safety glasses, glycerine, ethanol (provided)
+\item pencil/paper for sketches
+\end{itemize}
+
+\section*{Safety}
+We will be working with sharp tools and insects on pins. Wear your personal protective gear at all times. Specimens are to be returned to their vials after lab, and glycerol and ethanol will be collected for proper disposal or reuse.
+
+\section*{Methods}
+Working with a partner, organize your space, specimens, tools, and microscope. Use your probe and forceps to manipulate the specimen. In this lab, however, we will not be dissecting specimens (unless otherwise noted).
+
+\section{Coleoptera (beetles)}
+\textbf{Coleoptera} comprises by far the most diverse set of species of any insect order. With over 350,000 (or maybe even over 400,000) \textit{known} species, classified in hundreds of families you will only get a small sample in this course. Keep that in mind when you look at specimens you collected! You will surely encounter families we don't examine in lab. Key diagnostic characters are often derived from antenna and tarsal morphology, so you will spend a lot of time examining the shapes and numbers of appendage subdivisions. Below are a few figures that should help you understand the relevant phenotypes for determining beetle families, mainly tarsus morphology, antenna type, and features on the ventral side of these insects.
+
+\subsection{Archostemata}
+This is the smallest suborder of beetles, comprising only 50 or so species, classified in 5 extant families. This lineage is possibly sister to all other beetles, and its species have retained a lot of ancestral characteristics.
+
+\subsubsection{Cupedidae (reticulated beetles)}
+\noindent{}\textit{Diagnostic characters:} Antennae long, thread-like; body dorso-ventrally flattened, covered with scale-like setae; lateral (outer) margins of elytra are parallel in dorsal view; elytra with grid-like pattern of ridges.\\
+
+\noindent{}\textit{Natural history:} These beetles are typically found near rotting wood. Approximately 30 species have been described.
+
+\begin{figure}[ht!]
+  \centering
+    \includegraphics[width=0.5\textwidth]{CupedidHabitus}
+  \caption{Cupedidae. Photo (CC BY-NC-SA 2.0) by Patrick Coin \url{https://flic.kr/p/5zAYrU}}
+  \label{fig:cupedid}
+\end{figure}
+
+\subsection{Adephaga}
+\begin{itemize}
+\item antenna almost always thread-like
+\item notopleural suture present 
+\item hind trochanter partially separated from hind femur and coxa %(Figure \ref{fig:adephagaventral}{}, \texorpdfstring{tr\textsubscript{3}}{})
+\item hind coxa dividing first abdominal sternite
+\end{itemize}
+With almost 50,000 known species, this is one of the two largest suborders of beetles. Most species are predaceous, but some feed on algae, seeds, and/or fungi. This taxon is often further divided into Geadephaga (terrestrial families; primarily Carabidae) and Hydradephaga (aquatic species; Gyrinidae, Dytiscidae, Haliplidae, \textit{etc}.) 
+
+\subsubsection{Carabidae (ground beetles)} 
+\noindent{}\textit{Diagnostic characters:} Antennae threadlike, inserted between eyes and mandibles; fore tibia with antenna cleaner (Can you find it?); legs cursorial.\\
+
+\noindent{}\textit{Natural history:} Most species are predators of other invertebrates, although there are many that feed on plant material, especially seeds. This family is extraordinarily diverse, with about 40,000 species described.
+
+\begin{figure}[ht!]
+  \centering
+    \includegraphics[width=0.5\textwidth]{CarabidHabitus}
+  \caption{Habitus. Photo (CC BY-SA) by siga \url{https://goo.gl/Q5HPtU}}.
+  \label{fig:carab2}
+\end{figure}
+
+\subsubsection{Haliplidae (crawling water beetles)}
+\noindent{}\textit{Diagnostic characters:} Body oval, tapered at both ends, convex above, head relatively small; antennae threadlike but fairly short; hind coxae greatly enlarged into flat plates, covering 2 or more abdominal segments.\\
+
+\noindent{}\textit{Natural history:} These beetles are aquatic, and they store air in the expanded region near their hind coxae. Approximately 200 species have been described, all of which feed primarily on algae. They can usually be found crawling around in aquatic vegetation.
+
+\begin{figure}[ht!]
+  \centering
+\begin{subfigure}[ht!]{0.4\textwidth}
+   \includegraphics[width=\textwidth]{HaliplidHabitus}
+  \caption{Haliplidae habitus. Photo (CC BY-SA) by Udo Schmidt \url{https://flic.kr/p/5Bf6dZ}}.
+  \label{fig:haliplids}
+\end{subfigure}
+    \qquad
+\begin{subfigure}[ht!]{0.4\textwidth}
+\includegraphics[width=\textwidth]{GyrinidHabitus}
+  \caption{Gyrinidae habitus. Photo (CC BY-NC-SA) by Keith Roragen \url{https://flic.kr/p/KpHVUc}}.
+  \label{fig:gyrinid}
+\end{subfigure}
+    \caption{}
+\end{figure}
+
+\subsubsection{Gyrinidae (whirligig beetles)}
+\noindent{}\textit{Diagnostic characters:} Eyes divided into 2 parts; fore legs long, other legs short and flat like paddles; pedicel relatively large (Johnston's organ used to detect prey); antenna clubbed; body elongate-oval, dorso-ventrally flattened. \\
+
+\noindent{}\textit{Natural history:} These beetles are semi-aquatic and are usually found skimming across the surface in large aggregations. Approximately 700 species have been described worldwide.
+
+\begin{figure}[ht!]
+  \centering
+\begin{subfigure}[ht!]{0.35\textwidth}
+    \includegraphics[width=\textwidth]{GyrinidHead}
+  \caption{Head. Illustration by Otto Lugger (1899). Source: \url{https://goo.gl/jb0v7C}}
+  \label{fig:gyrinidhead}
+\end{subfigure}
+    \qquad
+\begin{subfigure}[ht!]{0.4\textwidth}
+    \includegraphics[width=\textwidth]{GyrinidAntennae}
+  \caption{Antennae. Illustration by Stavely (1873). Source: \url{https://goo.gl/3if79d}}
+  \label{fig:gyrinidantenna}
+\end{subfigure}
+    \caption{Gyrinidae}\label{fig:gyrinids}
+\end{figure}
+
+\subsubsection{Dytiscidae (predaceous diving beetles)}
+\noindent{}\textit{Diagnostic characters:} Body elongate-oval, convex and streamlined; fore tarsi sometimes pseudotetramerous; male tarsi often highly modified for mating (attachment device); hind legs flattened and fringed with hairs for swimming; antennae threadlike, fairly long, longer than palpi.\\
+
+\noindent{}\textit{Natural history:} These aquatic beetles feed on other invertebrates. They store air under their elytra and swim with both hind legs kicking simultaneously. Approximately 4,000 species have been described worldwide.
+
+\begin{figure}[ht!]
+  \centering
+\begin{subfigure}[ht!]{0.35\textwidth}
+    \includegraphics[width=\textwidth]{DytiscidHabitus1}
+  \caption{Dorsal habitus. Photo (CC BY-NC-SA) by Patrick Coin \url{https://flic.kr/p/7NEbee}}
+  \label{fig:dytiscidHabitus1}
+\end{subfigure}
+    \qquad
+\begin{subfigure}[ht!]{0.4\textwidth}
+    \includegraphics[width=\textwidth]{DytiscidHabitus2}
+  \caption{Ventral habitus. Photo (CC BY-NC-SA) by Jenn Forman Orth \url{https://flic.kr/p/bwwBqU}}
+  \label{fig:dytiscidHabitus2}
+\end{subfigure}
+    \caption{Dytiscidae}\label{fig:dytiscids}
+\end{figure}
+
+\subsection{Myxophaga}
+This another tiny suborder, with only 65+ species of small to minute beetles that are aquatic or semiaquatic, and feed on algae. Unfortunately we have no specimens in our collection.
+
+\subsection{Polyphaga}
+\begin{itemize}
+\item notopleural suture usually absent
+\item hind trochanter not separated and lobe-like (\textit{i.e.}, similar to most other insects) 
+\end{itemize}
+This lineage is by far the most diverse of the four coleopteran suborders, with \textgreater300,000 described species. These beetles vary considerably in their sizes, morphologies, diets, and other life history traits.
+
+\subsubsection{Ptiliidae (feather-wing beetles)}
+\noindent{}\textit{Diagnostic characters:} Extremely tiny (usually \textless1.2 mm); flight wings feather-like, often partially visible beyond elytra; antennae long, with 2--3-segmented loose club with whorl of setae; pronotum relatively large.\\
+
+\noindent{}\textit{Natural history:} Approximately 600 species of these minute (0.3--0.5 mm long) beetles have been described, many of which can be easily collected in leaf litter. Their common name is derived from their distinctive hind wing phenotype. These beetles have been the subject of research on the effects of miniaturization.
+
+\begin{figure}[ht!]
+  \centering
+\begin{subfigure}[ht!]{0.45\textwidth}
+    \includegraphics[width=\textwidth]{PtiliidHabitus2}
+  \caption{Habitus. Fig. 17 in Reiter (1908) \url{https://goo.gl/UAg49u}}
+  \label{fig:ptiliid1}
+\end{subfigure}
+    \qquad 
+\begin{subfigure}[ht!]{0.45\textwidth}
+    \includegraphics[width=\textwidth]{ptiliid}
+  \caption{Habitus. Photo (CC BY-SA 2.0) by Udo Schmidt \url{http://bit.ly/1jTsaKW}}
+  \label{fig:ptiliid2}
+\end{subfigure}
+    \caption{Ptiliidae}\label{fig:ptiliids}
+\end{figure}
+
+\subsubsection{Silphidae (carrion beetles)}
+\noindent{}\textit{Diagnostic characters:} Elytra broader posteriorly, loosely fitting and not heavily sclerotized; 1 or 2 abdominal tergites exposed posteriorly; antennae with 4-merous asymmetrical club; usually black and orange or yellow, \textgreater12 mm.
+
+\noindent{}\textit{Natural history:} As their common name suggests, these beetles usually process carrion (dead vertebrates, usually, which they bury) for their young. Nearly 200 species have been described worldwide.
+
+\begin{figure}[ht!]
+  \centering
+    \includegraphics[width=0.45\textwidth]{SilphidaeHabitus}
+  \caption{Silphidae. Photo (CC BY-SA-NC 2.0) by Patrick Coin \url{https://flic.kr/p/fLyyE5}}
+  \label{fig:silphid}
+\end{figure}
+
+\subsubsection{Staphylinidae (rove beetles)}
+\noindent{}\textit{Diagnostic characters:} Body usually elongate, slender; antennae usually thread-like; elytra almost always short, exposing 3--6 (usually 5--6) abdominal segments.\\
+
+\noindent{}\textit{Natural history:} This family is \textit{extraordinarily} diverse, with \textgreater60,000(!) described species, and therefore it is difficult to find a consistent set of easy-to-see diagnostic characters. Predation is the most common life history. Many species are saprophages, however,and even a few are parasitoids (of dipteran puparia).
+
+\begin{figure}[ht!]
+  \centering
+\begin{subfigure}[ht!]{0.45\textwidth}
+    \includegraphics[width=\textwidth]{staphylinidHabitus}
+  \caption{Staphylinidae habitus. Photo (CC BY-NC-SA 2.0) by Patrick Coin \url{https://flic.kr/p/5zAYrb}}
+  \label{fig:staphylinid1}
+\end{subfigure}
+    \qquad
+\begin{subfigure}[ht!]{0.45\textwidth}
+    \includegraphics[width=\textwidth]{staphylinid2}
+  \caption{Staphylinidae habitus. Photo (CC BY-NC-SA 2.0) by Oskar Gran \url{https://flic.kr/p/H3Qr5u}}
+  \label{fig:staphylinid2}
+\end{subfigure}
+    \caption{}\label{fig:staphylinids}
+\end{figure}
+
+\subsubsection{Hydrophilidae (water scavenger beetles)}
+\noindent{}\textit{Diagnostic characters:} Antennae short, 7--9 subdivisions, often concealed and clubbed; maxillary palps usually as long or longer than antennae (compare with Dytiscidae); metasternum often extended into sharp spine; a few species have the hind legs not modified for swimming and the body not so streamlined; these beetles usually live in dung.\\
+
+\noindent{}\textit{Natural history:} Larvae are usually usually aquatic and are predators of other invertebrates; while adults are predators or herbivores, and many are terrestrial or semiaquatic. Almost 3,000 species have been described worldwide.
+
+\begin{figure}[ht!]
+  \centering
+\begin{subfigure}[ht!]{0.4\textwidth}
+    \includegraphics[width=\textwidth]{Hydrophilid1}
+  \caption{Hydrophilidae ventral habitus. Image from  page 352 in Usinger (1956) \url{https://flic.kr/p/vNwPM5}}
+  \label{fig:hydrophilid1}
+\end{subfigure}
+    \qquad
+\begin{subfigure}[ht!]{0.45\textwidth}
+    \includegraphics[width=\textwidth]{Hydrophilid2}
+  \caption{Hydrophilidae dorsal habitus. Photo (CC BY-SA 2.0) by Udo Schmidt \url{https://flic.kr/p/79zenh}}
+  \label{fig:hydrophilid2}
+\end{subfigure}
+    \caption{}\label{fig:hydrophilids}
+\end{figure}
+
+\subsubsection{Histeridae (clown beetles)}
+\noindent{}\textit{Diagnostic characters:} Elytra short, exposing 2 rigid tergites; body usually somewhat flattened to very flattened; antennae geniculate (elbowed), with distinct 3-segmented club; hind coxae widely separated and without distinct posterior face.\\
+
+\noindent{}\textit{Natural history:} Almost 4,000 species have been described worldwide, and all are thought to be predators of other insects. Like many staphylinids, some species are inquiline-predators in the nests of ants and termites.
+
+\begin{figure}[ht!]
+  \centering
+    \includegraphics[width=0.5\textwidth]{HisteridHabitus}
+  \caption{Histeridae habitus. Photo (CC BY-SA2.0) by Udo Schmidt \url{https://flic.kr/p/oFbGxu}}
+  \label{fig:histerid}
+\end{figure}
+
+\subsubsection{Scarabaeidae (scarab, dung beetles, chafers)}
+\noindent{}\textit{Diagnostic characters:} Antennae with asymmetrical lamellate, 3--4 merous club which can close tightly [Note that several families we don't cover in lab, \textit{e.g.}, Geotrupidae, have similar antennae!]; morphologically diverse, but abdomen with 6 sternites; fore legs often fossorial.\\
+
+\noindent{}\textit{Natural history:} Extraordinarily diverse family, with about 30,000 described species. Most are saprophages, feeding in decaying vegetation/wood, dung, \textit{etc}. The subfamily Dynastinae (Rhinoceros beetles) includes many large, popular, well-known species, as does Cetoniinae (Goliath Beetles). Males often have cranial or pronotal evaginations that serve as fighting instruments.
+
+\begin{figure}[ht!]
+  \centering
+\begin{subfigure}[ht!]{0.25\textwidth}
+    \includegraphics[width=\textwidth]{ScarabHabitus1}
+  \caption{Photo (CC BY-SA 2.0) by Udo Schmidt \url{https://flic.kr/p/pSabdG}}
+  \label{fig:scarabaeid1}
+\end{subfigure}
+    ~
+\begin{subfigure}[ht!]{0.25\textwidth}
+    \includegraphics[width=\textwidth]{ScarabHabitus2}
+  \caption{Photo (CC BY-SA 2.0) by Udo Schmidt \url{https://flic.kr/p/pKYJEA}}
+  \label{fig:scarabaeid2}
+\end{subfigure}
+    ~
+\begin{subfigure}[ht!]{0.23\textwidth}
+    \includegraphics[width=\textwidth]{ScarabHabitus4}
+  \caption{Photo (CC BY-SA 2.0) by Udo Schmidt \url{https://flic.kr/p/nqwaxk}}
+  \label{fig:scarabaeid3}
+\end{subfigure}
+    \caption{Scarabaeidae habitus}\label{fig:scarabaeids}
+\end{figure}
+
+\subsubsection{Passalidae (bess or patent leather beetles)}
+\noindent{}\textit{Diagnostic characters:} Antennae with asymmetrical lamellate 3--6 merous club which does not close; sternites enclose mid coxal cavity, epimera not adjacent to coxal cavity; body elongate, parallel-sided, flattened, striated/grooved; head often with horn (Figure \ref{fig:passalid}); very little morphological variation within this family.\\
+
+\noindent{}\textit{Natural history:} Approximately 500 species are known worldwide, most of which are found in the tropics. These beetles are known to exhibit subsocial behavior, living in colonies in rotten wood, where adults care for larvae over an extended period of time. Like termites, these beetles need to re-acquire gut symbionts after each molt.
+
+\begin{figure}[ht!]
+  \centering
+    \includegraphics[width=0.5\textwidth]{PassalidHabitus}
+  \caption{Passalidae. Photo (CC BY-NC-SA 2.0) by Patrick Coin \url{https://flic.kr/p/638Rfa}}
+  \label{fig:passalid}
+\end{figure}
+
+\subsubsection{Lucanidae (stag beetles)}
+\noindent{}\textit{Diagnostic characters:} Antennae often elbowed; with asymmetrical lamellate, 3--4 merous club which can not close completely; sternites do not enclose mid coxal cavity, epimera adjacent to coxal cavity; body not dorso-ventrally flattened, not striated; mandibles often very large.\\
+
+\noindent{}\textit{Natural history:} Approximately 1,200 species have been described worldwide, almost all of which feed on rotting wood. Males are well-known for ``fighting'' each other with over-sized mandibles.
+
+\begin{figure}[ht!]
+  \centering
+\begin{subfigure}[ht!]{0.42\textwidth}
+    \includegraphics[width=\textwidth]{LucanidHabitus2}
+  \caption{Photo (CC BY-SA 2.0) by Udo Schmidt \url{https://flic.kr/p/fsYiJ2}}
+  \label{fig:lucanid1}
+\end{subfigure}
+    \qquad
+\begin{subfigure}[ht!]{0.47\textwidth}
+    \includegraphics[width=\textwidth]{LucanidHabitus}
+  \caption{Photo (CC BY-SA 2.0) by Udo Schmidt \url{https://flic.kr/p/5CdfQj}}
+  \label{fig:lucanid}\end{subfigure}
+    \caption{Lucanidae}\label{fig:lucanids}
+\end{figure}
+
+\subsubsection{Lycidae (net-winged beetles)}
+\noindent{}\textit{Diagnostic characters:} Abdomen with 7--8 visible sternites; elytra broad, flexible, reticulate, with network of ridges, usually broadest posteriorly; pronotum flattened, usually with strong median ridge, usually covering head; mid coxae separated far apart; femora and tibiae often flattened; antennae usually saw-toothed, occasionally thread-like.\\
+
+\noindent{}\textit{Natural history:} A diverse family, with \textgreater4,500 described species worldwide. Most species are understood to be fungivores as larvae, and adults will feed on nectar and honeydew. Many species are toxic and are aposematically colored and/or involved in mimicry complexes.
+
+\begin{figure}[ht!]
+  \centering
+    \includegraphics[width=0.5\textwidth]{LycidHabitus}
+  \caption{Lycidae. Photo (CC BY-NC-SA 2.0) by Jenn Forman Orth \url{https://flic.kr/p/uBhRL2}}
+  \label{fig:lycid}
+\end{figure}
+
+\subsubsection{Lampyridae (fireflies)}
+\noindent{}\textit{Diagnostic characters:} Tarsi sometimes pseudotetramerous; abdomen with 7--8 visible sternites; antennae thread-like to saw-toothed; body and elytra soft, ridged but not reticulate, nearly parallel-sided, fairly elongate; head concealed from above by flattened pronotum; antennal insertions very close to each other; often with prominent luminescent organs.\\
+
+\noindent{}\textit{Natural history:} Approximately 2,000 species of lampyrids are known, many of which are bioluminescent as larvae and/or adults. Larvae are generally predators of other invertebrates, while adults may also feed on nectar and pollen. These beetles are generally toxic.
+
+\begin{figure}[ht!]
+  \centering
+\begin{subfigure}[ht!]{0.42\textwidth}
+    \includegraphics[width=\textwidth]{LampyridHabitus}
+  \caption{Photo (CC BY-NC-SA 2.0) by Patrick Coin \url{https://flic.kr/p/PeEL5}}
+  \label{fig:lampyrid1}
+\end{subfigure}
+    \qquad
+\begin{subfigure}[ht!]{0.3\textwidth}
+    \includegraphics[width=\textwidth]{LampyridHabitusVentral}
+  \caption{Photo (CC BY 2.0) by Andy Deans}
+  \label{fig:lampyrid2}\end{subfigure}
+    \caption{Lampyridae}\label{fig:lampyrids}
+\end{figure}
+
+\subsubsection{Cantharidae (soldier beetles)}
+\noindent{}\textit{Diagnostic characters:} Abdomen with 7--8 visible sternites; antennae usually long, threadlike to saw-toothed; similar to Lampyridae (soft-bodies, elongate, \textit{etc}.), but: head usually not completely concealed from above; legs long; most of femur usually visible dorsally; antennal insertions further apart; no luminescent organ.\\
+
+\noindent{}\textit{Natural history:} Cantharid larvae develop as predators of other insects, especially eggs and larvae. Adult diets also may include pollen and nectar. More than 5,000 species have been described worldwide. 
+
+\begin{figure}[ht!]
+  \centering
+\begin{subfigure}[ht!]{0.42\textwidth}
+    \includegraphics[width=\textwidth]{CantharidHabitus1}
+  \caption{Photo (CC BY-NC-SA 2.0) by Patrick Coin \url{https://flic.kr/p/84vYBf}}
+  \label{fig:cantharid1}
+\end{subfigure}
+    ~
+\begin{subfigure}[ht!]{0.42\textwidth}
+    \includegraphics[width=\textwidth]{CantharidHabitus2}
+  \caption{Photo (CC BY-NC-SA 2.0) by Patrick Coin \url{https://flic.kr/p/84sUy4}}
+  \label{fig:cantharid2}\end{subfigure}
+    \caption{Cantharidae habitus}\label{fig:cantharids}
+\end{figure}
+
+\subsubsection{Elateridae (click beetles)}
+\noindent{}\textit{Diagnostic characters:} Abdomen with 6 or fewer visible sternites; pronotal processes pointed posteriorly; prosternum has elongated lobe (clicking mechanism); antennae saw-toothed (occasionally comb-like), never clubbed; body elongate, narrow and parallel or tapering.\\
+
+\noindent{}\textit{Natural history:} The number of described click beetles is approaching 10,000 worldwide. Most species are capable of flipping their bodies via the click mechanism (prosternal process, clicking into mesosternal scrobe). Larvae typically develop as saprophages or predators, while adults are usually herbivores.
+
+\begin{figure}[ht!]
+  \centering
+\begin{subfigure}[ht!]{0.4\textwidth}
+    \includegraphics[width=\textwidth]{ElateridVentral}
+  \caption{Ventral. Photo (CC BY-SA 2.0 Germany) by Chris Schuster \url{https://goo.gl/DkomM0}}
+  \label{fig:elaterid1}
+\end{subfigure}
+    ~
+\begin{subfigure}[ht!]{0.45\textwidth}
+    \includegraphics[width=\textwidth]{ElateridHabitus}
+  \caption{Dorsal. Photo (CC BY-NC-SA 2.0) by Patrick Coin \url{https://flic.kr/p/9tHH9d}}
+  \label{fig:elaterid2}\end{subfigure}
+    \caption{Elateridae}\label{fig:elaterids}
+\end{figure}
+
+\subsubsection{Dermestidae (carpet beetles)}
+\noindent{}\textit{Diagnostic characters:} Abdomen with 6 or fewer visible sternites; mid coxal cavity always open; fore coxae usually conical; pronotum mostly conceals head dorsally; antennae short, with abrupt 3-merous club, often fitting into grooves in pronotum; elytra often patterned with scales or small hairs; body robust, elongate-oval to round.\\
+
+\noindent{}\textit{Natural history:} Approximately 600 species are known worldwide. All are scavengers of plant or animal materials, and several species are pests in museum collections. \frownie{}
+
+\begin{figure}[ht!]
+  \centering
+    \includegraphics[width=0.45\textwidth]{DermestidHabitus}
+  \caption{Dermestidae habitus. Photo (CC BY-SA 4.0 International) by Didier Descouens \url{https://goo.gl/HwFCZA}}
+  \label{fig:dermestid}
+\end{figure}
+
+\subsubsection{Buprestidae (metallic wood-boring beetles)}
+\noindent{}\textit{Diagnostic characters:} Abdomen with 6 or fewer visible sternites; sternites do not enclose mid coxal cavity, epimera adjacent to coxal cavity; pronotum encircles head; antennae often short, rarely with 3-merous club; body narrow, distinctive shape, often metallic or shiny.\\
+
+\noindent{}\textit{Natural history:} These beetles are all herbivores as larvae and generally develop as borers of plants. Approximately 15,000 species have been described worldwide, including many important pests (\textit{e.g.}, Emerald Ash Borer; \textit{Agrilus planipennis} Fairmaire, 1888).
+
+\begin{figure}[ht!]
+  \centering
+    \includegraphics[width=0.45\textwidth]{BuprestidHabitus}
+  \caption{Buprestidae habitus. Photo (CC BY-SA 2.0) by Udo Schmidt \url{https://goo.gl/J4ZVn1}}
+  \label{fig:buprestid}
+\end{figure}
+
+\subsubsection{Bostrichidae (auger and powderpost beetles)}
+\noindent{}\textit{Diagnostic characters:} 1st tarsomere often very small; abdomen with 6 or fewer visible sternites; sternites enclose mid coxal cavity, epimera not adjacent to coxal cavity; prothorax hood-like, mostly concealing head from above, usually with rasp-like texture anteriorly; antennae with fairly compact 3--4-merous club; hind trochanter short, triangular; body well sclerotized, somewhat cylindrical; head bent down, usually concealed from above.\\
+
+\noindent{}\textit{Natural history:} These beetles usually feed in living or dead/dried wood as larvae. Some species feed on woody fungi. Approximately 600 species are known worldwide.
+
+\begin{figure}[ht!]
+  \centering
+\begin{subfigure}[ht!]{0.45\textwidth}
+    \includegraphics[width=\textwidth]{BostrichidHabitus}
+  \caption{Bostrichidae habitus. Photo (CC BY-NC-SA 2.0) by Paul Bedell \url{https://flic.kr/p/GSwRMj}}
+  \label{fig:bostrichid}
+\end{subfigure}
+    \qquad 
+\begin{subfigure}[ht!]{0.42\textwidth}
+    \includegraphics[width=\textwidth]{AnobiidHabitus}
+  \caption{Anobiidae habitus. Photo (CC BY-SA 2.0) by Udo Schmidt \url{https://flic.kr/p/KvQQEo}}
+  \label{fig:anobiid}\end{subfigure}
+    \caption{}\label{fig:anobiidderm}
+\end{figure}
+
+\subsubsection{Anobiidae (deathwatch beetles)}
+\noindent{}\textit{Diagnostic characters:} Abdomen with 6 or fewer visible sternites; sternites  enclose mid coxal cavity, epimera not adjacent to coxal cavity; prothorax hood-like, partially enclosing head and  concealing it from above; antennae with loose 3-merous club, sometimes comb-like; hind trochanter longer and cylindrical; head and appendages, particularly hind femur, can often be tucked into grooves (scrobes).\\
+
+\noindent{}\textit{Natural history:} Like bostrichids, these beetles typically bore in wood as larvae. Many species are pests of natural history and other museum collections and/or dried, stored products. The current name should probably be Ptinidae \citep{arango2012death}.
+
+\subsubsection{Cleridae (checkered beetles)}
+\noindent{}\textit{Diagnostic characters:} Several tarsomeres lobed; fore coxa with exposed trochantin (small sclerite attached to coxa), coxae projecting ventrally, circular; hind coxa reaches elytra- ``open''; antennae sometimes clubbed, saw-toothed or threadlike; eye often emarginate; pronotum usually longer than wide; body elongate-narrow, pronotum and head narrower than elytra, hard-bodied often marked with colors and always bristly/hairy.\\
+
+\noindent{}\textit{Natural history:} Most clerid species are predators of other insects, although some are scavengers or pollen-feeders. Some species are important for controlling pestiferous bark beetles. About 3,500 species have been described worldwide.
+
+\begin{figure}[ht!]
+  \centering
+    \includegraphics[width=0.5\textwidth]{CleridHabitus}
+  \caption{Cleridae habitus. Photo (CC BY-SA 2.0) by Udo Schmidt \url{https://flic.kr/p/pLAeE2}}
+  \label{fig:clerid}
+\end{figure}
+
+\subsubsection{Nitidulidae (sap beetles)}
+\noindent{}\textit{Diagnostic characters:} Fore coxa with exposed trochantin; hind coxa does not reach elytra; antennal club abrupt, ball-like, 3-merous; elytra usually not striate, usually shorter than abdomen; pronotum often covering part of head dorsally; body usually robust, sometimes very flattened- if very flat, not parallel-sided; similar to Erotylidae but usually smaller in size, with exposed hind trochantin and usually shortened elytra.\\
+
+\noindent{}\textit{Natural history:} These beetles typically feed on decaying vegetable matter and sap. More than 4,500 species have been described worldwide, including some pests of stored products.
+
+\begin{figure}[ht!]
+  \centering
+\begin{subfigure}[ht!]{0.43\textwidth}
+    \includegraphics[width=\textwidth]{NitidulidHabitus}
+  \caption{Nitidulidae habitus. Photo (CC BY-SA 2.0) by Udo Schmidt \url{https://flic.kr/p/MsJLYZ}}
+  \label{fig:nitidulid}
+\end{subfigure}
+    \qquad
+\begin{subfigure}[ht!]{0.43\textwidth}
+    \includegraphics[width=\textwidth]{ErotylidHabitus}
+  \caption{Erotylidae habitus. Photo (CC BY-SA 2.0) by Udo Schmidt \url{https://flic.kr/p/nBUj1e}}
+  \label{fig:erotylid}\end{subfigure}
+    \caption{}\label{fig:erotylnitid}
+\end{figure}
+
+\subsubsection{Erotylidae (pleasing fungus beetles)}
+\noindent{}\textit{Diagnostic characters:} Trochantin concealed or absent mid coxal cavity closed; antennae with abrupt 3--4-merous club; elongate-oval to oval, usually black and shiny and often with reddish or yellowish markings; similar to Nitidulidae but typically larger in size and with concealed or absent hind trochantin and elytra that usually cover whole abdomen.\\
+
+\noindent{}\textit{Natural history:} Larvae and adults feed on the fruiting bodies of fungi. About 3,500 species have been described worldwide.
+
+\subsubsection{Mordellidae (tumbling flower beetles)}
+\noindent{}\textit{Diagnostic characters:} Tarsi 5-5-4; body wedge-shaped humpbacked, forming a spine posteriorly; hind legs enlarged, hind tibia and tarsus with serrated ridges; antennae fairly short, threadlike or saw-toothed; head strongly retracted backwards.\\
+
+\noindent{}\textit{Natural history:} Approximately 1,500 species of this distinctive family have been described worldwide. Adults, which are typically found on flowers, escape disturbance by jumping repeatedly (``tumbling'') until they can right themselves and fly. Larvae usually bore in plants of fungi.
+
+\begin{figure}[ht!]
+  \centering
+    \includegraphics[width=0.5\textwidth]{MordellidHabitus}
+  \caption{Mordellidae habitus. Photo (CC BY 3.0 Unported) by Dick Belgers \url{https://goo.gl/Xkw4ne}}
+  \label{fig:mordellid}
+\end{figure}
+
+\subsubsection{Meloidae}
+\noindent{}\textit{Diagnostic characters:} Tarsi 5-5-4; claw of fore tarsus with large blade ventrally; head broad, wider than pronotum, with gradual constriction behind eyes; pronotum narrower than head and elytra; antennae slender, not clubbed; body soft, leathery, elytra ``loose'', sometime shorter than abdomen.\\
+
+\noindent{}\textit{Natural history:} Cleptoparasites or parasitoids of bees and other insects. The first instar larvae (``triungulins'') are very small and phoretic, hitching rides on their hosts while hanging out near flowers. Adults are capable of reflex bleeding toxic hemolymph from weaknesses in the conjunctiva. This hemolymph can cause blistering in humans. About 7,500 species are known worldwide.\\
+
+\noindent{}CAUTION: Specimens exude toxic chemicals (even after death!)\\
+
+\begin{figure}[ht!]
+  \centering
+\begin{subfigure}[ht!]{0.43\textwidth}
+    \includegraphics[width=\textwidth]{MeloidHabitus}
+  \caption{Meloidae habitus. Photo (CC BY-SA 2.0) by Udo Schmidt \url{https://flic.kr/p/6WoXpW}}
+  \label{fig:meloid}
+\end{subfigure}
+    \qquad
+\begin{subfigure}[ht!]{0.45\textwidth}
+    \includegraphics[width=\textwidth]{AnthicidHabitus}
+  \caption{Anthicidae habitus. Photo (CC BY-SA 2.0) by Udo Schmidt \url{https://flic.kr/p/qQRBXz}}
+  \label{fig:anthicid}\end{subfigure}
+    \caption{}\label{fig:anthmelo}
+\end{figure}
+
+\subsubsection{Anthicidae}%ditch this one next year?
+\noindent{}\textit{Diagnostic characters:} Head as wide as pronotum, with ``neck'' (\textit{i.e.}, constriction behind eyes); pronotum widest near front, narrowed posteriorly, often with anterior pronotal horn; elytra often setose; antennae threadlike to weakly clubbed; Some have short elytra- tell apart from Staphylinidae by the hind coxae with a posterior face.\\
+
+\noindent{}\textit{Natural history:} Larvae and adults feed on a diverse array of foods. About 3,000 species have been described worldwide.
+
+\subsubsection{Tenebrionidae}
+\noindent{}\textit{Diagnostic characters:} Tarsi 5-5-4 (most beetles have 5-5-5); trochantin concealed or absent; eyes usually notched by frontal ridge (emarginate); antennae arising from under ridge on frons so that insertion can't be seen dorsally; antennae threadlike, bead-like to very weakly clubbed; 3 anteriormost sternites connate (fused); extremely variable in form.\\
+
+\noindent{}\textit{Natural history:} A diverse family, with at least 20,000 described species. Their diets vary, but most species seem to be fungivores and/or saprophages. These beetles are frequently found in xeric environments. \textit{Tenebrio molitor} Linnaeus, 1758, an important model for research on genetics, is a tenebrionid.
+
+\begin{figure}[ht!]
+  \centering
+\begin{subfigure}[ht!]{0.38\textwidth}
+    \includegraphics[width=\textwidth]{TenebrionidHead}
+  \caption{Head, anterior. Photo (CC BY 2.0) by Lies Van Rompaey \url{https://flic.kr/p/b15iqp}}
+  \label{fig:tenebrionid1}
+\end{subfigure}
+    \qquad
+\begin{subfigure}[ht!]{0.5\textwidth}
+    \includegraphics[width=\textwidth]{TenebrionidHabitus}
+  \caption{Habitus. Photo (CC BY-SA 2.0) by Udo Schmidt \url{https://flic.kr/p/fCbgWh}}
+  \label{fig:tenebrionid2}
+\end{subfigure}
+    \caption{Tenebrionidae}\label{fig:tenebrionids}
+\end{figure}
+
+\subsubsection{Coccinellidae}
+\noindent{}\textit{Diagnostic characters:} Tarsi 4-4-4, often apparently 3-3-3 (\textit{i.e.}, pseudotrimerous; antennae short, with weak 3--6-merous club; pronotum wide but often concealing head dorsally; 2 anteriormost sternites connate (fused); first abdominal segment with lines leading from coxa.\\
+
+\noindent{}\textit{Natural history:} These beetles are primarily predators of other insects, especially soft-bodied ones, like aphids. Like meloids, these beetles are usually capable of reflex-bleeding as a defense; their hemolymph is toxic. About 6,000 species have been described.
+
+\begin{figure}[ht!]
+  \centering
+\begin{subfigure}[ht!]{0.42\textwidth}
+    \includegraphics[width=\textwidth]{CoccinellidLateral}
+  \caption{Habitus, lateral. Photo (CC BY 2.0) by Brian Gatwicke \url{https://flic.kr/p/HUpi9W}}
+  \label{fig:coccinellid1}
+\end{subfigure}
+    \qquad
+\begin{subfigure}[ht!]{0.42\textwidth}
+    \includegraphics[width=\textwidth]{CoccinellidHabitus}
+  \caption{Habitus, dorsal. Photo (CC BY-SA 2.0) by Udo Schmidt \url{https://flic.kr/p/5rSNLm}}
+  \label{fig:coccinellid2}
+\end{subfigure}
+    \caption{Coccinellidae}\label{fig:coccinellids}
+\end{figure}
+
+\noindent{}The remaining families are classified in a taxon called \textbf{Phytophaga}, and the vast majority of these species feed on plants. All species are 5-5-5 but look 4-4-4. 
+
+\subsubsection{Cerambycidae}
+\noindent{}\textit{Diagnostic characters:} Tarsi 5-5-5, pseudotetramerous; femora often enlarged, palpi often very short and immovable; antennae long, not clubbed, usually longer than half the body and often longer than body, capable of reflexing back over body; eyes usually notched, antennal insertion often protruding and arising from notch; tibiae always with 2 large apical spurs; body 3--75 mm long.\\
+
+\noindent{}\textit{Natural history:} Extraordinarily diverse family, with \textgreater30,000 known species. Larvae usually live inside and feed upon dead or dying wood. Adults can be found foraging on pollen, nectar, fungi, and other foods. This family includes many significant forest pests (\textit{e.g.}, the Asian Long-horned Beetle, \textit{Anoplophora glabripennis} (Motschulsky, 1853)).\\
+
+\begin{figure}[ht!]
+  \centering
+\begin{subfigure}[ht!]{0.25\textwidth}
+    \includegraphics[width=\textwidth]{Cerambycid1}
+  \caption{Photo (CC BY-SA 2.0) by Udo Schmidt \url{https://flic.kr/p/pudkxN}}
+  \label{fig:cerambycid1}
+\end{subfigure}
+    ~
+ \begin{subfigure}[ht!]{0.27\textwidth}
+    \includegraphics[width=\textwidth]{Cerambycid2}
+  \caption{Photo (CC BY-SA 2.0) by Udo Schmidt \url{https://flic.kr/p/gWgp4V}}
+  \label{fig:cerambycid2}
+\end{subfigure}
+    ~
+\begin{subfigure}[ht!]{0.27\textwidth}
+    \includegraphics[width=\textwidth]{Cerambycid3}
+  \caption{Photo (CC BY-SA 2.0) by Udo Schmidt \url{https://flic.kr/p/5X3S8y}}
+  \label{fig:cerambycid3}
+\end{subfigure}
+    \caption{Cerambycidae habitus}\label{fig:cerambycids}
+\end{figure}
+
+\subsubsection{Chrysomelidae}
+\noindent{}\textit{Diagnostic characters:} Tarsi 5-5-5, pseudotetramerous; femora often enlarged, palpi often very short and immovable; antennae shorter than half the body, not clubbed, if longer then not arising not prominent notch in eye ; usually at least one tibia with less than 2 apical spurs; can be very difficult to tell apart from Cerambycidae (but antennae are not arising from frontal tubercles); subfamilies often distinctive; usually small, body rarely \textgreater12 mm long.\\
+
+\noindent{}\textit{Natural history:} Diversely phytophagous beetles, with species foraging on just about every part of the plant imaginable---leaves, seeds, stems, roots, \textit{etc}. At least 37,000 species are known, and they are phenotypically quite diverse.\\
+
+\begin{figure}[ht!]
+  \centering
+\begin{subfigure}[ht!]{0.5\textwidth}
+    \includegraphics[width=\textwidth]{Chrysomelid1}
+  \caption{Photo (CC BY-NC 2.0) by Christoffer F\"{a}gerstr\"{o}m  \url{https://flic.kr/p/oqHJ6M}}
+  \label{fig:chrysomelid1}
+\end{subfigure}
+    ~
+ \begin{subfigure}[ht!]{0.23\textwidth}
+    \includegraphics[width=\textwidth]{Chrysomelid2}
+  \caption{Photo (CC BY-NC 2.0) by Christoffer F\"{a}gerstr\"{o}m  \url{https://flic.kr/p/qyydf7}}
+  \label{fig:chrysomelid2}
+\end{subfigure}
+    ~
+\begin{subfigure}[ht!]{0.23\textwidth}
+    \includegraphics[width=\textwidth]{Chrysomelid3}
+  \caption{Photo (CC BY-NC 2.0) by Christoffer F\"{a}gerstr\"{o}m  \url{https://flic.kr/p/vC4dsA}}
+  \label{fig:chrysomelid3}
+\end{subfigure}
+    \caption{Chrysomelidae habitus}\label{fig:chrysomelids}
+\end{figure}
+
+\subsubsection{Curculionidae}
+\noindent{}\textit{Diagnostic characters:} Tarsi 5-5-5, pseudotetramerous; femora often enlarged; snout usually well developed, flat or slender, mandibles often tiny, palpi very short and immovable; antennae elbowed, with compact 3--4-merous club, usually arising on snout. This lineage includes numerous important pests.\\
+
+\noindent{}\textit{Natural history:} Easily the most diverse family we cover (and likely of anything living), with \textgreater80,000(!) described species. They are diversely phytophagous,although many species (ambrosia beetles; formerly Platypodidae and Scolytidae) cultivate fungi in galleries inside trees. \\
+
+\begin{figure}[ht!]
+  \centering
+\begin{subfigure}[ht!]{0.35\textwidth}
+    \includegraphics[width=\textwidth]{Curculionid1}
+  \caption{Dorsal. Photo (CC BY-NC-SA 2.0) by Mark Gurney \url{https://flic.kr/p/CtpFMT}}
+  \label{fig:curculionid1}
+\end{subfigure}
+    \qquad
+\begin{subfigure}[ht!]{0.5\textwidth}
+    \includegraphics[width=\textwidth]{Curculionid4}
+  \caption{Lateral. Photo (CC BY-NC-SA 2.0) by Durham Field Office - Forest Health Protection \url{https://flic.kr/p/Ag6GGY}}
+  \label{fig:curculionid2}
+\end{subfigure}
+    \caption{Curculionidae habitus}\label{fig:curculionids}
+\end{figure}
+
+\FloatBarrier
+\section{Strepsiptera (twisted-wing parasites)}
+Coleoptera's sister, \textbf{Strepsiptera}, includes relatively few species, all of which are parasitic on other insects. We will learn them at the ordinal level only.
+\begin{itemize}
+\item fore wing reduced to short club-like structures (like hind wing halteres of Diptera)
+\item hind wing large and fan-like, with few veins
+\item antennae 4--7-segmented, usually branched
+\item eyes bulging or on stalks
+\item females usually do not leave the host and look more or less like a legless engorged tick embedded between the abdominal segments of their host
+\item very small as adults; minuscule triungulin (distinctive larval phenotype with 3 tarsal claws) larvae
+\end{itemize}
+
+\begin{figure}[ht!]
+  \centering
+\begin{subfigure}[ht!]{0.5\textwidth}
+    \includegraphics[width=\textwidth]{Strepsiptera1}
+  \caption{Inside host (upper left); male (lower right) \citep[Plate 45 in][]{bhl91785}}
+  \label{fig:strep1}
+\end{subfigure}
+    \hfill
+\begin{subfigure}[ht!]{0.4\textwidth}
+    \includegraphics[width=\textwidth]{StrepsipteraHead}
+  \caption{Head, with distinctive eyes. Photo (CC BY-NC-SA 2.0) by Michael Hrabar \url{https://flic.kr/p/gX3fLf}}
+  \label{fig:strep2}
+\end{subfigure}
+    \caption{Strepsiptera}\label{fig:strepsipterans}
+\end{figure}
+
+\FloatBarrier
+\section*{Test yourself}
+Before moving on to the next unit make sure you're comfortable with the following concepts. Could you write a couple sentences that explain each term? Can you provide examples?\\
+
+\noindent{}What selective advantages do elytra confer to these insects? What factors \textit{besides} the presence of elytra might explain the extraordinary diversity of beetles?\\
+
+\noindent{}What adaptations do we see in Adephaga, and how do they contribute to the diversity of the lineage and its classification?\\
+
+\noindent{}What led to the development of a cryptonephritic Malpighian system, and how has this adaptation contributed to the diversity we see in Coleoptera?\\
+
+\noindent{}Would you describe strepsipterans as parasites or parasitoids? Why?\\
+
+\noindent{}Familiarize yourself with the following taxon names, which refer to organisms you are likely to encounter in the northeastern USA and/or which are phylogenetically relevant. Can you describe how these arthropods live (natural history) and roughly how diverse they are? Do you know how they're related to one another? If you had to choose a family to study from the taxa below which one would it be and why?
+\begin{enumerate} 
+\item Archostemata
+\item Adephaga
+\item Coleoptera  
+\item Phytophaga
+\item Polyphaga
+\item Strepsiptera
+\end{enumerate}
+
+\FloatBarrier
+\section*{Epilogue}
+This handout is part of an open curriculum. Original files are available free for anyone to download, copy, modify, and improve at the Open Entomology GitHub repository \citep{ENT432}, which also provides a mechanism for reporting problems and other feedback:\\
+\url{https://github.com/OpenEntomology/InsectBiodiversityEvolution/issues}
+
+\section*{Acknowledgments}
+Most of the illustrations were generously made available by Agriculture Canada. The reproduction of the illustrations from this work is not produced in affiliation with, or with the endorsement of the Government of Canada. Other images were borrowed from Wikimedia Commons, Flickr, and the Biodiversity Heritage Library. The authors made a good faith effort to adhere to the terms of their respective Creative Commons licenses and provide appropriate credit and links to source pages. All images were accessed 19 October 2016. We thank these artists for making their images available for educational purposes.
+
+\FloatBarrier
+% adding bibliography here
+\bibliographystyle{myplainnat}
+\bibliography{bib}
+
+\end{document}
+
+%Stuff to delete:
+
+\begin{figure}[ht!]
+    \centering
+    \begin{subfigure}[ht!]{0.45\textwidth}
+        \includegraphics[width=\textwidth]{image38}
+        \caption{Coleoptera tarsi}
+        \label{fig:beetlelegs}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[ht!]{0.4\textwidth}
+        \includegraphics[width=\textwidth]{image39}
+        \caption{Coleoptera antennae}
+        \label{fig:beetleantennae}
+    \end{subfigure}
+    \caption{}\label{fig:coleopmorph1}
+\end{figure}
+
+\begin{figure}[ht!]
+    \centering
+    \begin{subfigure}[ht!]{0.38\textwidth}
+        \includegraphics[width=\textwidth]{image42}
+        \caption{}
+        \label{fig:adephagaventral}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[ht!]{0.38\textwidth}
+        \includegraphics[width=\textwidth]{image22}
+        \caption{}
+        \label{fig:polyphagaventral}
+    \end{subfigure}
+    \caption{Coleoptera morphology, ventral view.}\label{fig:coleopmorph2}
+\end{figure}
+
+
+\subsubsection{Elmidae (riffle beetles)}
+\noindent{}\textit{Diagnostic characters:} Body oval to nearly cylindrical; legs long, claws large (used to hold onto substrate in lotic habitats); antennae moderately long, slender or weakly clubbed; fore coxae rounded; look similar to Buprestidae, which has the first 2 abdominal sternites are fused; this state never occurs in Elmidae.\\
+
+\begin{figure}[ht!]
+  \centering
+    \includegraphics[width=0.45\textwidth]{image55}
+  \caption{Elmidae}
+  \label{fig:elmid}
+\end{figure}
