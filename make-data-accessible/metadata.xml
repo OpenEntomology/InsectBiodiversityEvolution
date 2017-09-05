@@ -3,7 +3,7 @@
 <permission>read</permission>
 </allow>
 </access>
- <dataset> <title>Arthropod specimens from fall 2016 ENT 432 course at Penn State</title>
+ <dataset> <title>Arthropod specimens from fall 2017 ENT 432 course at Penn State</title>
  <creator id="1475715679183"> <individualName><givenName>Andrew</givenName>
 <surName>Deans</surName>
 </individualName>
@@ -17,76 +17,10 @@
 </address>
 <electronicMailAddress>adeans@psu.edu</electronicMailAddress>
 </creator>
- <associatedParty id="1475715792291"><individualName><givenName>Tristan</givenName>
-<surName>Cofer</surName>
+ <associatedParty id="1475715792291"><individualName><givenName>Student</givenName>
+<surName>A</surName>
 </individualName>
-<electronicMailAddress>tmc33@psu.edu</electronicMailAddress>
-<role>Content Provider</role>
-</associatedParty>
-<associatedParty id="1475715911561"><individualName><givenName>Elizabeth</givenName>
-<surName>Davidson</surName>
-</individualName>
-<electronicMailAddress>exd33@psu.edu</electronicMailAddress>
-<role>Content Provider</role>
-</associatedParty>
-<associatedParty id="1475715943378"><individualName><givenName>Emily</givenName>
-<surName>Erickson</surName>
-</individualName>
-<electronicMailAddress>ere6@psu.edu</electronicMailAddress>
-<role>Content Provider</role>
-</associatedParty>
-<associatedParty id="1475715978368"><individualName><givenName>Brandon</givenName>
-<surName>Gominho</surName>
-</individualName>
-<electronicMailAddress>bsg5145@psu.edu</electronicMailAddress>
-<role>Content Provider</role>
-</associatedParty>
-<associatedParty id="1475716019702"><individualName><givenName>Natalie</givenName>
-<surName>Imirzian</surName>
-</individualName>
-<electronicMailAddress>nsi2@psu.edu</electronicMailAddress>
-<role>Content Provider</role>
-</associatedParty>
-<associatedParty id="1475716059448"><individualName><givenName>Tyler</givenName>
-<surName>Jones</surName>
-</individualName>
-<electronicMailAddress>toj2@psu.edu</electronicMailAddress>
-<role>Content Provider</role>
-</associatedParty>
-<associatedParty id="1475716087069"><individualName><givenName>Hillary</givenName>
-<surName>Morin</surName>
-</individualName>
-<electronicMailAddress>hjm5194@psu.edu</electronicMailAddress>
-<role>Content Provider</role>
-</associatedParty>
-<associatedParty id="1475716151267"><individualName><givenName>Sulav</givenName>
-<surName>Paudel</surName>
-</individualName>
-<electronicMailAddress>sup215@psu.edu</electronicMailAddress>
-<role>Content Provider</role>
-</associatedParty>
-<associatedParty id="1475716211073"><individualName><givenName>Ngoc</givenName>
-<surName>Phan</surName>
-</individualName>
-<electronicMailAddress>nqp5173@psu.edu</electronicMailAddress>
-<role>Content Provider</role>
-</associatedParty>
-<associatedParty id="1475716245611"><individualName><givenName>Emily</givenName>
-<surName>Sandall</surName>
-</individualName>
-<electronicMailAddress>els22@psu.edu</electronicMailAddress>
-<role>Content Provider</role>
-</associatedParty>
-<associatedParty id="1475716298525"><individualName><givenName>Hannah</givenName>
-<surName>Stewart</surName>
-</individualName>
-<electronicMailAddress>stewarth93@outlook.com</electronicMailAddress>
-<role>Content Provider</role>
-</associatedParty>
-<associatedParty id="1475716325273"><individualName><givenName>Brianna</givenName>
-<surName>Flonc</surName>
-</individualName>
-<electronicMailAddress>bzf8@psu.edu</electronicMailAddress>
+<electronicMailAddress>adeans@psu.edu</electronicMailAddress>
 <role>Content Provider</role>
 </associatedParty>
 <abstract><para>Student collections, compiled as part of an entomology course at Penn State: Insect Biodiversity and Evolution (ENT 432). Specimens are deposited at the Frost Museum. This collection and the associated data are part of an exercise that helps students understand insect taxonomy, natural history, and biodiversity informatics.</para>
