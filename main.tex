@@ -1,0 +1,88 @@
+\documentclass[11pt]{book}
+\usepackage{import}
+\usepackage{example}
+
+%adjusting margins
+	\addtolength{\oddsidemargin}{.4in}
+	\addtolength{\evensidemargin}{-.4in}
+
+\usepackage{makeidx}
+%\makeindex%see https://en.wikibooks.org/wiki/LaTeX/Indexing for ideas on indexing
+\makeindex[columns=3, title=Taxonomic Index]
+\makeindex[name=preps,title=Specimen Prep Information,columns=1]
+
+\begin{document}
+%\renewcommand\indexname{Taxonomic Index}
+
+\frontmatter
+\import{./}{title.tex}
+
+\clearpage
+\thispagestyle{empty}
+
+\tableofcontents
+\clearpage
+\thispagestyle{empty}
+
+\mainmatter
+
+\chapter{Introduction}
+\input{sections/introduction.tex}
+
+\chapter{Arthropod morphology}
+\input{sections/morphology.tex}
+
+\chapter[Early arthropods, fossils, and terrestrialization]{Early arthropods, fossils, \\ and terrestrialization}
+\input{sections/fossils.tex}
+
+\chapter[Systematics, past and present]{Systematics, past and \\present}
+\input{sections/systematics.tex}
+
+\chapter{Non-hexapod Arthropoda}
+\input{sections/nonhexapod.tex}
+
+\chapter{Non-pterygote Hexapoda}
+\input{sections/nonpterygote.tex}
+
+\chapter[Paleoptera, Plecoptera, origin of wings]{Paleoptera, Plecoptera,\\ origin of wings}
+\input{sections/paleoptera.tex}
+
+\chapter{Polyneoptera}
+\input{sections/polyneoptera.tex}
+
+\chapter{Acercaria}
+\input{sections/acercaria.tex}
+
+\chapter{Larvae, Pupae}
+\input{sections/larvae.tex}
+
+\chapter{Hymenoptera}
+\input{sections/hymenoptera.tex}
+
+\chapter{Amphiesmenoptera}
+\input{sections/amphiesmenoptera.tex}
+
+\chapter{Antliophora}
+\input{sections/antliophora.tex}
+
+\chapter{Coleopterida}
+\input{sections/coleopterida.tex}
+
+\chapter{Neuropterida}
+\input{sections/neuropterida.tex}
+
+\chapter{Specimen preparation}
+\input{sections/preps.tex}
+
+\chapter{Epilogue}
+\input{sections/epilogue.tex}
+
+\backmatter
+
+% adding bibliography here
+\bibliographystyle{myplainnat}
+\bibliography{bibliography}
+
+\printindex% Ouput the default index here
+
+\end{document}
